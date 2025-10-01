@@ -1,0 +1,793 @@
+date,url,team_id,team,rank
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,los-angeles-dodgers,Los Angeles Dodgers,1
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,philadeliphia-phillies,Philadelphia Phillies,2
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,atlanta-braves,Atlanta Braves,3
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,san-diego-padres,San Diego Padres,4
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,new-york-yankees,New York Yankees,5
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,baltimore-orioles,Baltimore Orioles,6
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,new-york-mets,New York Mets,7
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,houston-astros,Houston Astros,8
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,milwaukee-brewers,Milwaukee Brewers,9
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,cleveland-guardians,Cleveland Guardians,10
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,arizona-diamondbacks,Arizona Diamondbacks,11
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,detroit-tigers,Detroit Tigers,12
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,kansas-city-royals,Kansas City Royals,13
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,seattle-mariners,Seattle Mariners,14
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,boston-redsox,Boston Red Sox,15
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,chicago-cubs,Chicago Cubs,16
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,texas-rangers,Texas Rangers,17
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,minnesota-twins,Minnesota Twins,18
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,tampa-bay-rays,Tampa Bay Rays,19
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,cincinnati-reds,Cincinnati Reds,20
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,san-francisco-giants,San Francisco Giants,21
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,toronto-bluejays,Toronto Blue Jays,22
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,st-louis-cardinals,St. Louis Cardinals,23
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,pittsburgh-pirates,Pittsburgh Pirates,24
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,washington-nationals,Washington Nationals,25
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,athletics,Athletics,26
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,los-angeles-angels,Los Angeles Angels,27
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,miami-marlins,Miami Marlins,28
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,colorado-rockies,Colorado Rockies,29
+2024-11-10,https://www.mlb.com/news/power-rankings-2025-mlb-season,chicago-whitesox,Chicago White Sox,30
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,los-angeles-dodgers,Los Angeles Dodgers,1
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,philadeliphia-phillies,Philadelphia Phillies,2
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,new-york-yankees,New York Yankees,3
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,new-york-mets,New York Mets,4
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,atlanta-braves,Atlanta Braves,5
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,san-diego-padres,San Diego Padres,6
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,baltimore-orioles,Baltimore Orioles,7
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,arizona-diamondbacks,Arizona Diamondbacks,8
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,houston-astros,Houston Astros,9
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,milwaukee-brewers,Milwaukee Brewers,10
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,detroit-tigers,Detroit Tigers,11
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,cleveland-guardians,Cleveland Guardians,12
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,chicago-cubs,Chicago Cubs,13
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,kansas-city-royals,Kansas City Royals,14
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,boston-redsox,Boston Red Sox,15
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,texas-rangers,Texas Rangers,16
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,seattle-mariners,Seattle Mariners,17
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,minnesota-twins,Minnesota Twins,18
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,san-francisco-giants,San Francisco Giants,19
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,tampa-bay-rays,Tampa Bay Rays,20
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,cincinnati-reds,Cincinnati Reds,21
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,pittsburgh-pirates,Pittsburgh Pirates,22
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,toronto-bluejays,Toronto Blue Jays,23
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,athletics,Athletics,24
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,washington-nationals,Washington Nationals,25
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,st-louis-cardinals,St. Louis Cardinals,26
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,los-angeles-angels,Los Angeles Angels,27
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,colorado-rockies,Colorado Rockies,28
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,miami-marlins,Miami Marlins,29
+2025-01-08,https://www.mlb.com/news/mlb-power-rankings-inaugural-2025-edition,chicago-whitesox,Chicago White Sox,30
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,los-angeles-dodgers,Los Angeles Dodgers,1
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,philadeliphia-phillies,Philadelphia Phillies,2
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,atlanta-braves,Atlanta Braves,3
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,new-york-mets,New York Mets,4
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,baltimore-orioles,Baltimore Orioles,5
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,arizona-diamondbacks,Arizona Diamondbacks,6
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,boston-redsox,Boston Red Sox,7
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,new-york-yankees,New York Yankees,8
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,san-diego-padres,San Diego Padres,9
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,texas-rangers,Texas Rangers,10
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,houston-astros,Houston Astros,11
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,milwaukee-brewers,Milwaukee Brewers,12
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,chicago-cubs,Chicago Cubs,13
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,detroit-tigers,Detroit Tigers,14
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,kansas-city-royals,Kansas City Royals,15
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,cleveland-guardians,Cleveland Guardians,16
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,seattle-mariners,Seattle Mariners,17
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,minnesota-twins,Minnesota Twins,18
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,cincinnati-reds,Cincinnati Reds,19
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,toronto-bluejays,Toronto Blue Jays,20
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,san-francisco-giants,San Francisco Giants,21
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,athletics,Athletics,22
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,tampa-bay-rays,Tampa Bay Rays,23
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,st-louis-cardinals,St. Louis Cardinals,24
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,washington-nationals,Washington Nationals,25
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,pittsburgh-pirates,Pittsburgh Pirates,26
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,los-angeles-angels,Los Angeles Angels,27
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,colorado-rockies,Colorado Rockies,28
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,miami-marlins,Miami Marlins,29
+2025-03-14,https://www.mlb.com/news/mlb-power-rankings-before-opening-day-2025,chicago-whitesox,Chicago White Sox,30
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,los-angeles-dodgers,Los Angeles Dodgers,1
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,philadeliphia-phillies,Philadelphia Phillies,2
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,new-york-yankees,New York Yankees,3
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,san-diego-padres,San Diego Padres,4
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,texas-rangers,Texas Rangers,5
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,chicago-cubs,Chicago Cubs,6
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,arizona-diamondbacks,Arizona Diamondbacks,7
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,san-francisco-giants,San Francisco Giants,8
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,new-york-mets,New York Mets,9
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,boston-redsox,Boston Red Sox,10
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,baltimore-orioles,Baltimore Orioles,11
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,toronto-bluejays,Toronto Blue Jays,12
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,detroit-tigers,Detroit Tigers,13
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,tampa-bay-rays,Tampa Bay Rays,14
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,kansas-city-royals,Kansas City Royals,15
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,cleveland-guardians,Cleveland Guardians,16
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,houston-astros,Houston Astros,17
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,milwaukee-brewers,Milwaukee Brewers,18
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,atlanta-braves,Atlanta Braves,19
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,st-louis-cardinals,St. Louis Cardinals,20
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,los-angeles-angels,Los Angeles Angels,21
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,seattle-mariners,Seattle Mariners,22
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,athletics,Athletics,23
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,minnesota-twins,Minnesota Twins,24
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,cincinnati-reds,Cincinnati Reds,25
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,miami-marlins,Miami Marlins,26
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,washington-nationals,Washington Nationals,28
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,chicago-whitesox,Chicago White Sox,29
+2025-04-06,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-6-2025,colorado-rockies,Colorado Rockies,30
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,los-angeles-dodgers,Los Angeles Dodgers,1
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,san-diego-padres,San Diego Padres,2
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,philadeliphia-phillies,Philadelphia Phillies,3
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,new-york-mets,New York Mets,4
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,chicago-cubs,Chicago Cubs,5
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,san-francisco-giants,San Francisco Giants,6
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,new-york-yankees,New York Yankees,7
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,detroit-tigers,Detroit Tigers,8
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,texas-rangers,Texas Rangers,9
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,arizona-diamondbacks,Arizona Diamondbacks,10
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,milwaukee-brewers,Milwaukee Brewers,11
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,boston-redsox,Boston Red Sox,12
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,baltimore-orioles,Baltimore Orioles,13
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,cleveland-guardians,Cleveland Guardians,14
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,toronto-bluejays,Toronto Blue Jays,15
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,los-angeles-angels,Los Angeles Angels,16
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,houston-astros,Houston Astros,17
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,seattle-mariners,Seattle Mariners,18
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,kansas-city-royals,Kansas City Royals,19
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,cincinnati-reds,Cincinnati Reds,20
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,atlanta-braves,Atlanta Braves,21
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,tampa-bay-rays,Tampa Bay Rays,22
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,st-louis-cardinals,St. Louis Cardinals,23
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,washington-nationals,Washington Nationals,24
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,athletics,Athletics,25
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,miami-marlins,Miami Marlins,26
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,minnesota-twins,Minnesota Twins,27
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,pittsburgh-pirates,Pittsburgh Pirates,28
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,chicago-whitesox,Chicago White Sox,29
+2025-04-13,https://www.mlb.com/news/mlb-power-rankings-for-week-of-april-13-2025,colorado-rockies,Colorado Rockies,30
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,los-angeles-dodgers,Los Angeles Dodgers,1
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,san-diego-padres,San Diego Padres,2
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,new-york-mets,New York Mets,3
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,chicago-cubs,Chicago Cubs,4
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,philadeliphia-phillies,Philadelphia Phillies,5
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,new-york-yankees,New York Yankees,6
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,san-francisco-giants,San Francisco Giants,7
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,detroit-tigers,Detroit Tigers,8
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,arizona-diamondbacks,Arizona Diamondbacks,9
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,texas-rangers,Texas Rangers,10
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,boston-redsox,Boston Red Sox,11
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,toronto-bluejays,Toronto Blue Jays,12
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,cleveland-guardians,Cleveland Guardians,13
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,seattle-mariners,Seattle Mariners,14
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,milwaukee-brewers,Milwaukee Brewers,15
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,houston-astros,Houston Astros,16
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,baltimore-orioles,Baltimore Orioles,17
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,cincinnati-reds,Cincinnati Reds,18
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,atlanta-braves,Atlanta Braves,19
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,athletics,Athletics,20
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,los-angeles-angels,Los Angeles Angels,21
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,tampa-bay-rays,Tampa Bay Rays,22
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,kansas-city-royals,Kansas City Royals,23
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,st-louis-cardinals,St. Louis Cardinals,24
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,washington-nationals,Washington Nationals,25
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,minnesota-twins,Minnesota Twins,26
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,miami-marlins,Miami Marlins,28
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,chicago-whitesox,Chicago White Sox,29
+2025-04-20,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-20,colorado-rockies,Colorado Rockies,30
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,new-york-mets,New York Mets,1
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,los-angeles-dodgers,Los Angeles Dodgers,2
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,chicago-cubs,Chicago Cubs,3
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,san-diego-padres,San Diego Padres,4
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,detroit-tigers,Detroit Tigers,5
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,san-francisco-giants,San Francisco Giants,6
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,new-york-yankees,New York Yankees,7
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,seattle-mariners,Seattle Mariners,8
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,texas-rangers,Texas Rangers,9
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,cleveland-guardians,Cleveland Guardians,10
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,arizona-diamondbacks,Arizona Diamondbacks,11
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,boston-redsox,Boston Red Sox,12
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,philadeliphia-phillies,Philadelphia Phillies,13
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,cincinnati-reds,Cincinnati Reds,14
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,houston-astros,Houston Astros,15
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,kansas-city-royals,Kansas City Royals,16
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,atlanta-braves,Atlanta Braves,17
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,toronto-bluejays,Toronto Blue Jays,18
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,tampa-bay-rays,Tampa Bay Rays,19
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,athletics,Athletics,20
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,milwaukee-brewers,Milwaukee Brewers,21
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,st-louis-cardinals,St. Louis Cardinals,22
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,baltimore-orioles,Baltimore Orioles,23
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,los-angeles-angels,Los Angeles Angels,24
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,washington-nationals,Washington Nationals,25
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,miami-marlins,Miami Marlins,26
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,minnesota-twins,Minnesota Twins,27
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,pittsburgh-pirates,Pittsburgh Pirates,28
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,chicago-whitesox,Chicago White Sox,29
+2025-04-27,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-april-27,colorado-rockies,Colorado Rockies,30
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,los-angeles-dodgers,Los Angeles Dodgers,1
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,new-york-mets,New York Mets,2
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,chicago-cubs,Chicago Cubs,3
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,san-diego-padres,San Diego Padres,4
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,detroit-tigers,Detroit Tigers,5
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,new-york-yankees,New York Yankees,6
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,seattle-mariners,Seattle Mariners,7
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,san-francisco-giants,San Francisco Giants,8
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,philadeliphia-phillies,Philadelphia Phillies,9
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,cleveland-guardians,Cleveland Guardians,10
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,arizona-diamondbacks,Arizona Diamondbacks,11
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,boston-redsox,Boston Red Sox,12
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,houston-astros,Houston Astros,13
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,cincinnati-reds,Cincinnati Reds,14
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,kansas-city-royals,Kansas City Royals,15
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,milwaukee-brewers,Milwaukee Brewers,16
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,athletics,Athletics,17
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,atlanta-braves,Atlanta Braves,18
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,texas-rangers,Texas Rangers,19
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,toronto-bluejays,Toronto Blue Jays,20
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,tampa-bay-rays,Tampa Bay Rays,21
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,baltimore-orioles,Baltimore Orioles,22
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,st-louis-cardinals,St. Louis Cardinals,23
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,washington-nationals,Washington Nationals,24
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,minnesota-twins,Minnesota Twins,25
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,los-angeles-angels,Los Angeles Angels,26
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,miami-marlins,Miami Marlins,27
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,pittsburgh-pirates,Pittsburgh Pirates,28
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,chicago-whitesox,Chicago White Sox,29
+2025-05-04,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-4-2025,colorado-rockies,Colorado Rockies,30
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,los-angeles-dodgers,Los Angeles Dodgers,1
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,san-diego-padres,San Diego Padres,2
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,detroit-tigers,Detroit Tigers,3
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,new-york-mets,New York Mets,4
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,chicago-cubs,Chicago Cubs,5
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,philadeliphia-phillies,Philadelphia Phillies,6
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,new-york-yankees,New York Yankees,7
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,san-francisco-giants,San Francisco Giants,8
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,seattle-mariners,Seattle Mariners,9
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,kansas-city-royals,Kansas City Royals,10
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,arizona-diamondbacks,Arizona Diamondbacks,11
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,cleveland-guardians,Cleveland Guardians,12
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,boston-redsox,Boston Red Sox,13
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,atlanta-braves,Atlanta Braves,14
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,houston-astros,Houston Astros,15
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,athletics,Athletics,16
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,st-louis-cardinals,St. Louis Cardinals,17
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,minnesota-twins,Minnesota Twins,18
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,cincinnati-reds,Cincinnati Reds,19
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,milwaukee-brewers,Milwaukee Brewers,20
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,texas-rangers,Texas Rangers,21
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,toronto-bluejays,Toronto Blue Jays,22
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,tampa-bay-rays,Tampa Bay Rays,23
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,baltimore-orioles,Baltimore Orioles,24
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,washington-nationals,Washington Nationals,25
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,los-angeles-angels,Los Angeles Angels,26
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,miami-marlins,Miami Marlins,27
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,pittsburgh-pirates,Pittsburgh Pirates,28
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,chicago-whitesox,Chicago White Sox,29
+2025-05-11,https://www.mlb.com/news/power-rankings-for-week-of-may-11-2025,colorado-rockies,Colorado Rockies,30
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,los-angeles-dodgers,Los Angeles Dodgers,1
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,detroit-tigers,Detroit Tigers,2
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,new-york-mets,New York Mets,3
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,san-diego-padres,San Diego Padres,4
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,new-york-yankees,New York Yankees,5
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,philadeliphia-phillies,Philadelphia Phillies,6
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,chicago-cubs,Chicago Cubs,7
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,san-francisco-giants,San Francisco Giants,8
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,minnesota-twins,Minnesota Twins,9
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,seattle-mariners,Seattle Mariners,10
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,cleveland-guardians,Cleveland Guardians,11
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,st-louis-cardinals,St. Louis Cardinals,12
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,arizona-diamondbacks,Arizona Diamondbacks,13
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,texas-rangers,Texas Rangers,14
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,kansas-city-royals,Kansas City Royals,15
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,houston-astros,Houston Astros,16
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,atlanta-braves,Atlanta Braves,17
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,boston-redsox,Boston Red Sox,18
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,athletics,Athletics,19
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,cincinnati-reds,Cincinnati Reds,20
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,milwaukee-brewers,Milwaukee Brewers,21
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,toronto-bluejays,Toronto Blue Jays,22
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,tampa-bay-rays,Tampa Bay Rays,23
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,washington-nationals,Washington Nationals,24
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,los-angeles-angels,Los Angeles Angels,25
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,baltimore-orioles,Baltimore Orioles,26
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,miami-marlins,Miami Marlins,27
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,pittsburgh-pirates,Pittsburgh Pirates,28
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,chicago-whitesox,Chicago White Sox,29
+2025-05-18,https://www.mlb.com/news/power-rankings-for-week-of-may-18-2025,colorado-rockies,Colorado Rockies,30
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,philadeliphia-phillies,Philadelphia Phillies,1
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,los-angeles-dodgers,Los Angeles Dodgers,2
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,detroit-tigers,Detroit Tigers,3
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,new-york-yankees,New York Yankees,4
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,chicago-cubs,Chicago Cubs,5
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,new-york-mets,New York Mets,6
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,san-francisco-giants,San Francisco Giants,7
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,seattle-mariners,Seattle Mariners,8
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,san-diego-padres,San Diego Padres,9
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,minnesota-twins,Minnesota Twins,10
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,cleveland-guardians,Cleveland Guardians,11
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,st-louis-cardinals,St. Louis Cardinals,12
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,houston-astros,Houston Astros,13
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,boston-redsox,Boston Red Sox,14
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,arizona-diamondbacks,Arizona Diamondbacks,15
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,kansas-city-royals,Kansas City Royals,16
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,atlanta-braves,Atlanta Braves,17
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,cincinnati-reds,Cincinnati Reds,18
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,texas-rangers,Texas Rangers,19
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,toronto-bluejays,Toronto Blue Jays,20
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,tampa-bay-rays,Tampa Bay Rays,21
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,milwaukee-brewers,Milwaukee Brewers,22
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,los-angeles-angels,Los Angeles Angels,23
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,athletics,Athletics,24
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,washington-nationals,Washington Nationals,25
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,miami-marlins,Miami Marlins,26
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,baltimore-orioles,Baltimore Orioles,27
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,pittsburgh-pirates,Pittsburgh Pirates,28
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,chicago-whitesox,Chicago White Sox,29
+2025-05-25,https://www.mlb.com/news/mlb-power-rankings-for-week-of-may-25-2025,colorado-rockies,Colorado Rockies,30
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,detroit-tigers,Detroit Tigers,1
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,chicago-cubs,Chicago Cubs,2
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,new-york-mets,New York Mets,3
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,new-york-yankees,New York Yankees,4
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,los-angeles-dodgers,Los Angeles Dodgers,5
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,philadeliphia-phillies,Philadelphia Phillies,6
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,san-diego-padres,San Diego Padres,7
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,houston-astros,Houston Astros,8
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,san-francisco-giants,San Francisco Giants,9
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,st-louis-cardinals,St. Louis Cardinals,10
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,minnesota-twins,Minnesota Twins,11
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,milwaukee-brewers,Milwaukee Brewers,12
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,toronto-bluejays,Toronto Blue Jays,13
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,tampa-bay-rays,Tampa Bay Rays,14
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,cleveland-guardians,Cleveland Guardians,15
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,seattle-mariners,Seattle Mariners,16
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,kansas-city-royals,Kansas City Royals,17
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,cincinnati-reds,Cincinnati Reds,18
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,arizona-diamondbacks,Arizona Diamondbacks,19
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,boston-redsox,Boston Red Sox,20
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,texas-rangers,Texas Rangers,21
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,atlanta-braves,Atlanta Braves,22
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,washington-nationals,Washington Nationals,23
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,baltimore-orioles,Baltimore Orioles,24
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,los-angeles-angels,Los Angeles Angels,25
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,miami-marlins,Miami Marlins,26
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,athletics,Athletics,28
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,chicago-whitesox,Chicago White Sox,29
+2025-06-08,https://www.mlb.com/news/power-rankings-for-week-of-june-8-2025,colorado-rockies,Colorado Rockies,30
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,detroit-tigers,Detroit Tigers,1
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,new-york-mets,New York Mets,2
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,chicago-cubs,Chicago Cubs,3
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,new-york-yankees,New York Yankees,4
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,los-angeles-dodgers,Los Angeles Dodgers,5
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,philadeliphia-phillies,Philadelphia Phillies,6
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,houston-astros,Houston Astros,7
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,san-francisco-giants,San Francisco Giants,8
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,san-diego-padres,San Diego Padres,9
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,tampa-bay-rays,Tampa Bay Rays,10
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,milwaukee-brewers,Milwaukee Brewers,11
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,toronto-bluejays,Toronto Blue Jays,12
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,st-louis-cardinals,St. Louis Cardinals,13
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,boston-redsox,Boston Red Sox,14
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,arizona-diamondbacks,Arizona Diamondbacks,15
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,minnesota-twins,Minnesota Twins,16
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,cleveland-guardians,Cleveland Guardians,17
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,cincinnati-reds,Cincinnati Reds,18
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,seattle-mariners,Seattle Mariners,19
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,texas-rangers,Texas Rangers,20
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,atlanta-braves,Atlanta Braves,21
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,kansas-city-royals,Kansas City Royals,22
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,los-angeles-angels,Los Angeles Angels,23
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,baltimore-orioles,Baltimore Orioles,24
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,washington-nationals,Washington Nationals,25
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,pittsburgh-pirates,Pittsburgh Pirates,26
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,athletics,Athletics,27
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,miami-marlins,Miami Marlins,28
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,chicago-whitesox,Chicago White Sox,29
+2025-06-15,https://www.mlb.com/news/power-rankings-for-week-of-june-15-2025,colorado-rockies,Colorado Rockies,30
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,detroit-tigers,Detroit Tigers,1
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,los-angeles-dodgers,Los Angeles Dodgers,2
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,chicago-cubs,Chicago Cubs,3
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,philadeliphia-phillies,Philadelphia Phillies,4
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,new-york-mets,New York Mets,5
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,houston-astros,Houston Astros,6
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,new-york-yankees,New York Yankees,7
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,tampa-bay-rays,Tampa Bay Rays,8
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,san-francisco-giants,San Francisco Giants,9
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,milwaukee-brewers,Milwaukee Brewers,10
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,san-diego-padres,San Diego Padres,11
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,st-louis-cardinals,St. Louis Cardinals,12
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,toronto-bluejays,Toronto Blue Jays,13
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,arizona-diamondbacks,Arizona Diamondbacks,14
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,boston-redsox,Boston Red Sox,15
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,cincinnati-reds,Cincinnati Reds,16
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,seattle-mariners,Seattle Mariners,17
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,cleveland-guardians,Cleveland Guardians,18
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,texas-rangers,Texas Rangers,19
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,atlanta-braves,Atlanta Braves,20
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,kansas-city-royals,Kansas City Royals,21
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,minnesota-twins,Minnesota Twins,22
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,baltimore-orioles,Baltimore Orioles,23
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,los-angeles-angels,Los Angeles Angels,24
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,washington-nationals,Washington Nationals,25
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,athletics,Athletics,26
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,miami-marlins,Miami Marlins,28
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,chicago-whitesox,Chicago White Sox,29
+2025-06-22,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-22,colorado-rockies,Colorado Rockies,30
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,detroit-tigers,Detroit Tigers,1
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,los-angeles-dodgers,Los Angeles Dodgers,2
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,chicago-cubs,Chicago Cubs,3
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,houston-astros,Houston Astros,4
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,philadeliphia-phillies,Philadelphia Phillies,5
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,new-york-yankees,New York Yankees,6
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,tampa-bay-rays,Tampa Bay Rays,7
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,new-york-mets,New York Mets,8
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,milwaukee-brewers,Milwaukee Brewers,9
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,san-diego-padres,San Diego Padres,10
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,st-louis-cardinals,St. Louis Cardinals,11
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,san-francisco-giants,San Francisco Giants,12
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,toronto-bluejays,Toronto Blue Jays,13
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,seattle-mariners,Seattle Mariners,14
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,cincinnati-reds,Cincinnati Reds,15
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,texas-rangers,Texas Rangers,16
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,arizona-diamondbacks,Arizona Diamondbacks,17
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,boston-redsox,Boston Red Sox,18
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,atlanta-braves,Atlanta Braves,19
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,cleveland-guardians,Cleveland Guardians,20
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,los-angeles-angels,Los Angeles Angels,21
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,minnesota-twins,Minnesota Twins,22
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,kansas-city-royals,Kansas City Royals,23
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,baltimore-orioles,Baltimore Orioles,24
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,miami-marlins,Miami Marlins,25
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,athletics,Athletics,26
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,washington-nationals,Washington Nationals,27
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,pittsburgh-pirates,Pittsburgh Pirates,28
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,chicago-whitesox,Chicago White Sox,29
+2025-06-29,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-june-30,colorado-rockies,Colorado Rockies,30
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,detroit-tigers,Detroit Tigers,1
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,los-angeles-dodgers,Los Angeles Dodgers,2
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,houston-astros,Houston Astros,3
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,chicago-cubs,Chicago Cubs,4
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,philadeliphia-phillies,Philadelphia Phillies,5
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,toronto-bluejays,Toronto Blue Jays,6
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,new-york-mets,New York Mets,7
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,milwaukee-brewers,Milwaukee Brewers,8
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,tampa-bay-rays,Tampa Bay Rays,9
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,new-york-yankees,New York Yankees,10
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,san-diego-padres,San Diego Padres,11
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,seattle-mariners,Seattle Mariners,12
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,st-louis-cardinals,St. Louis Cardinals,13
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,san-francisco-giants,San Francisco Giants,14
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,cincinnati-reds,Cincinnati Reds,15
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,boston-redsox,Boston Red Sox,16
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,texas-rangers,Texas Rangers,17
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,arizona-diamondbacks,Arizona Diamondbacks,18
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,minnesota-twins,Minnesota Twins,19
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,kansas-city-royals,Kansas City Royals,20
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,los-angeles-angels,Los Angeles Angels,21
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,cleveland-guardians,Cleveland Guardians,22
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,miami-marlins,Miami Marlins,23
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,baltimore-orioles,Baltimore Orioles,24
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,atlanta-braves,Atlanta Braves,25
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,pittsburgh-pirates,Pittsburgh Pirates,26
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,washington-nationals,Washington Nationals,27
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,athletics,Athletics,28
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,chicago-whitesox,Chicago White Sox,29
+2025-07-06,https://www.mlb.com/news/mlb-power-rankings-for-the-week-of-july-6,colorado-rockies,Colorado Rockies,30
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,detroit-tigers,Detroit Tigers,1
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,chicago-cubs,Chicago Cubs,2
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,los-angeles-dodgers,Los Angeles Dodgers,3
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,houston-astros,Houston Astros,4
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,new-york-mets,New York Mets,5
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,toronto-bluejays,Toronto Blue Jays,6
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,milwaukee-brewers,Milwaukee Brewers,7
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,philadeliphia-phillies,Philadelphia Phillies,8
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,new-york-yankees,New York Yankees,9
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,san-diego-padres,San Diego Padres,10
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,boston-redsox,Boston Red Sox,11
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,san-francisco-giants,San Francisco Giants,12
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,tampa-bay-rays,Tampa Bay Rays,13
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,seattle-mariners,Seattle Mariners,14
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,st-louis-cardinals,St. Louis Cardinals,15
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,cincinnati-reds,Cincinnati Reds,16
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,texas-rangers,Texas Rangers,17
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,minnesota-twins,Minnesota Twins,18
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,los-angeles-angels,Los Angeles Angels,19
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,arizona-diamondbacks,Arizona Diamondbacks,20
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,kansas-city-royals,Kansas City Royals,21
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,cleveland-guardians,Cleveland Guardians,22
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,baltimore-orioles,Baltimore Orioles,23
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,atlanta-braves,Atlanta Braves,24
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,miami-marlins,Miami Marlins,25
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,athletics,Athletics,26
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,washington-nationals,Washington Nationals,27
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,pittsburgh-pirates,Pittsburgh Pirates,28
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,chicago-whitesox,Chicago White Sox,29
+2025-07-16,https://www.mlb.com/news/mlb-power-rankings-post-all-star-break,colorado-rockies,Colorado Rockies,30
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,chicago-cubs,Chicago Cubs,1
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,toronto-bluejays,Toronto Blue Jays,2
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,new-york-mets,New York Mets,3
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,los-angeles-dodgers,Los Angeles Dodgers,4
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,philadeliphia-phillies,Philadelphia Phillies,5
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,milwaukee-brewers,Milwaukee Brewers,6
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,houston-astros,Houston Astros,7
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,detroit-tigers,Detroit Tigers,8
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,seattle-mariners,Seattle Mariners,9
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,new-york-yankees,New York Yankees,10
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,san-diego-padres,San Diego Padres,11
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,boston-redsox,Boston Red Sox,12
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,texas-rangers,Texas Rangers,13
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,cincinnati-reds,Cincinnati Reds,14
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,san-francisco-giants,San Francisco Giants,15
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,tampa-bay-rays,Tampa Bay Rays,16
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,st-louis-cardinals,St. Louis Cardinals,17
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,cleveland-guardians,Cleveland Guardians,18
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,kansas-city-royals,Kansas City Royals,19
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,arizona-diamondbacks,Arizona Diamondbacks,20
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,minnesota-twins,Minnesota Twins,21
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,los-angeles-angels,Los Angeles Angels,22
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,miami-marlins,Miami Marlins,23
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,baltimore-orioles,Baltimore Orioles,24
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,atlanta-braves,Atlanta Braves,25
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,athletics,Athletics,26
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,washington-nationals,Washington Nationals,27
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,pittsburgh-pirates,Pittsburgh Pirates,28
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,chicago-whitesox,Chicago White Sox,29
+2025-07-27,https://www.mlb.com/news/mlb-power-rankings-july-27-2025,colorado-rockies,Colorado Rockies,30
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,milwaukee-brewers,Milwaukee Brewers,1
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,chicago-cubs,Chicago Cubs,2
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,toronto-bluejays,Toronto Blue Jays,3
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,detroit-tigers,Detroit Tigers,4
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,los-angeles-dodgers,Los Angeles Dodgers,5
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,philadeliphia-phillies,Philadelphia Phillies,6
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,new-york-mets,New York Mets,7
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,houston-astros,Houston Astros,8
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,san-diego-padres,San Diego Padres,9
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,seattle-mariners,Seattle Mariners,10
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,boston-redsox,Boston Red Sox,11
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,new-york-yankees,New York Yankees,12
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,texas-rangers,Texas Rangers,13
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,cincinnati-reds,Cincinnati Reds,14
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,tampa-bay-rays,Tampa Bay Rays,15
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,cleveland-guardians,Cleveland Guardians,16
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,san-francisco-giants,San Francisco Giants,17
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,kansas-city-royals,Kansas City Royals,18
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,miami-marlins,Miami Marlins,19
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,st-louis-cardinals,St. Louis Cardinals,20
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,arizona-diamondbacks,Arizona Diamondbacks,21
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,los-angeles-angels,Los Angeles Angels,22
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,baltimore-orioles,Baltimore Orioles,23
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,atlanta-braves,Atlanta Braves,24
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,athletics,Athletics,25
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,minnesota-twins,Minnesota Twins,26
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,washington-nationals,Washington Nationals,28
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,chicago-whitesox,Chicago White Sox,29
+2025-08-03,https://www.mlb.com/news/power-rankings-for-week-of-august-3-2025,colorado-rockies,Colorado Rockies,30
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,milwaukee-brewers,Milwaukee Brewers,1
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,los-angeles-dodgers,Los Angeles Dodgers,2
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,philadeliphia-phillies,Philadelphia Phillies,3
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,chicago-cubs,Chicago Cubs,4
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,toronto-bluejays,Toronto Blue Jays,5
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,detroit-tigers,Detroit Tigers,6
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,san-diego-padres,San Diego Padres,7
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,boston-redsox,Boston Red Sox,8
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,seattle-mariners,Seattle Mariners,9
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,houston-astros,Houston Astros,10
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,new-york-mets,New York Mets,11
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,new-york-yankees,New York Yankees,12
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,cleveland-guardians,Cleveland Guardians,13
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,cincinnati-reds,Cincinnati Reds,14
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,texas-rangers,Texas Rangers,15
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,kansas-city-royals,Kansas City Royals,16
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,tampa-bay-rays,Tampa Bay Rays,17
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,san-francisco-giants,San Francisco Giants,18
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,st-louis-cardinals,St. Louis Cardinals,19
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,miami-marlins,Miami Marlins,20
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,arizona-diamondbacks,Arizona Diamondbacks,21
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,los-angeles-angels,Los Angeles Angels,22
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,baltimore-orioles,Baltimore Orioles,23
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,athletics,Athletics,24
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,atlanta-braves,Atlanta Braves,25
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,minnesota-twins,Minnesota Twins,26
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,washington-nationals,Washington Nationals,28
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,chicago-whitesox,Chicago White Sox,29
+2025-08-10,https://www.mlb.com/news/power-rankings-week-of-august-10-2025,colorado-rockies,Colorado Rockies,30
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,milwaukee-brewers,Milwaukee Brewers,1
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,los-angeles-dodgers,Los Angeles Dodgers,2
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,toronto-bluejays,Toronto Blue Jays,3
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,philadeliphia-phillies,Philadelphia Phillies,4
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,detroit-tigers,Detroit Tigers,5
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,chicago-cubs,Chicago Cubs,6
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,san-diego-padres,San Diego Padres,7
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,houston-astros,Houston Astros,8
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,seattle-mariners,Seattle Mariners,9
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,boston-redsox,Boston Red Sox,10
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,new-york-yankees,New York Yankees,11
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,new-york-mets,New York Mets,12
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,cincinnati-reds,Cincinnati Reds,13
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,cleveland-guardians,Cleveland Guardians,14
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,texas-rangers,Texas Rangers,15
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,kansas-city-royals,Kansas City Royals,16
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,tampa-bay-rays,Tampa Bay Rays,17
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,st-louis-cardinals,St. Louis Cardinals,18
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,arizona-diamondbacks,Arizona Diamondbacks,19
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,san-francisco-giants,San Francisco Giants,20
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,miami-marlins,Miami Marlins,21
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,los-angeles-angels,Los Angeles Angels,22
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,atlanta-braves,Atlanta Braves,23
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,baltimore-orioles,Baltimore Orioles,24
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,athletics,Athletics,25
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,minnesota-twins,Minnesota Twins,26
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,washington-nationals,Washington Nationals,28
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,chicago-whitesox,Chicago White Sox,29
+2025-08-17,https://www.mlb.com/news/power-rankings-for-week-of-august-17-2025,colorado-rockies,Colorado Rockies,30
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,milwaukee-brewers,Milwaukee Brewers,1
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,detroit-tigers,Detroit Tigers,2
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,philadeliphia-phillies,Philadelphia Phillies,3
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,toronto-bluejays,Toronto Blue Jays,4
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,chicago-cubs,Chicago Cubs,5
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,san-diego-padres,San Diego Padres,6
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,los-angeles-dodgers,Los Angeles Dodgers,7
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,boston-redsox,Boston Red Sox,8
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,houston-astros,Houston Astros,9
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,new-york-yankees,New York Yankees,10
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,seattle-mariners,Seattle Mariners,11
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,new-york-mets,New York Mets,12
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,cincinnati-reds,Cincinnati Reds,13
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,kansas-city-royals,Kansas City Royals,14
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,cleveland-guardians,Cleveland Guardians,15
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,texas-rangers,Texas Rangers,16
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,arizona-diamondbacks,Arizona Diamondbacks,17
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,tampa-bay-rays,Tampa Bay Rays,18
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,st-louis-cardinals,St. Louis Cardinals,19
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,san-francisco-giants,San Francisco Giants,20
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,los-angeles-angels,Los Angeles Angels,21
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,baltimore-orioles,Baltimore Orioles,22
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,atlanta-braves,Atlanta Braves,23
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,miami-marlins,Miami Marlins,24
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,athletics,Athletics,25
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,minnesota-twins,Minnesota Twins,26
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,washington-nationals,Washington Nationals,28
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,chicago-whitesox,Chicago White Sox,29
+2025-08-24,https://www.mlb.com/news/power-rankings-week-of-august-24-2025,colorado-rockies,Colorado Rockies,30
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,milwaukee-brewers,Milwaukee Brewers,1
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,philadeliphia-phillies,Philadelphia Phillies,2
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,detroit-tigers,Detroit Tigers,3
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,los-angeles-dodgers,Los Angeles Dodgers,4
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,toronto-bluejays,Toronto Blue Jays,5
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,chicago-cubs,Chicago Cubs,6
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,san-diego-padres,San Diego Padres,7
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,new-york-yankees,New York Yankees,8
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,boston-redsox,Boston Red Sox,9
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,houston-astros,Houston Astros,10
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,new-york-mets,New York Mets,11
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,seattle-mariners,Seattle Mariners,12
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,kansas-city-royals,Kansas City Royals,13
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,texas-rangers,Texas Rangers,14
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,cincinnati-reds,Cincinnati Reds,15
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,cleveland-guardians,Cleveland Guardians,16
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,arizona-diamondbacks,Arizona Diamondbacks,17
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,st-louis-cardinals,St. Louis Cardinals,18
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,san-francisco-giants,San Francisco Giants,19
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,tampa-bay-rays,Tampa Bay Rays,20
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,miami-marlins,Miami Marlins,21
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,athletics,Athletics,22
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,atlanta-braves,Atlanta Braves,23
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,los-angeles-angels,Los Angeles Angels,24
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,baltimore-orioles,Baltimore Orioles,25
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,minnesota-twins,Minnesota Twins,26
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,washington-nationals,Washington Nationals,28
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,chicago-whitesox,Chicago White Sox,29
+2025-09-01,https://www.mlb.com/news/mlb-power-rankings-week-of-september-1st-2025,colorado-rockies,Colorado Rockies,30
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,milwaukee-brewers,Milwaukee Brewers,1
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,philadeliphia-phillies,Philadelphia Phillies,2
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,toronto-bluejays,Toronto Blue Jays,3
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,chicago-cubs,Chicago Cubs,4
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,detroit-tigers,Detroit Tigers,5
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,new-york-yankees,New York Yankees,6
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,los-angeles-dodgers,Los Angeles Dodgers,7
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,san-diego-padres,San Diego Padres,8
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,boston-redsox,Boston Red Sox,9
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,houston-astros,Houston Astros,10
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,new-york-mets,New York Mets,11
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,seattle-mariners,Seattle Mariners,12
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,kansas-city-royals,Kansas City Royals,13
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,texas-rangers,Texas Rangers,14
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,san-francisco-giants,San Francisco Giants,15
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,arizona-diamondbacks,Arizona Diamondbacks,16
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,tampa-bay-rays,Tampa Bay Rays,17
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,cleveland-guardians,Cleveland Guardians,18
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,cincinnati-reds,Cincinnati Reds,19
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,st-louis-cardinals,St. Louis Cardinals,20
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,baltimore-orioles,Baltimore Orioles,21
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,athletics,Athletics,22
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,atlanta-braves,Atlanta Braves,23
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,miami-marlins,Miami Marlins,24
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,los-angeles-angels,Los Angeles Angels,25
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,minnesota-twins,Minnesota Twins,26
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,washington-nationals,Washington Nationals,28
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,chicago-whitesox,Chicago White Sox,29
+2025-09-07,https://www.mlb.com/news/mlb-power-rankings-week-of-september-8-2025,colorado-rockies,Colorado Rockies,30
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,milwaukee-brewers,Milwaukee Brewers,1
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,philadeliphia-phillies,Philadelphia Phillies,2
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,toronto-bluejays,Toronto Blue Jays,3
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,los-angeles-dodgers,Los Angeles Dodgers,4
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,chicago-cubs,Chicago Cubs,5
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,detroit-tigers,Detroit Tigers,6
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,new-york-yankees,New York Yankees,7
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,seattle-mariners,Seattle Mariners,8
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,houston-astros,Houston Astros,9
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,san-diego-padres,San Diego Padres,10
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,boston-redsox,Boston Red Sox,11
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,texas-rangers,Texas Rangers,12
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,new-york-mets,New York Mets,13
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,san-francisco-giants,San Francisco Giants,14
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,cleveland-guardians,Cleveland Guardians,15
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,cincinnati-reds,Cincinnati Reds,16
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,arizona-diamondbacks,Arizona Diamondbacks,17
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,kansas-city-royals,Kansas City Royals,18
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,tampa-bay-rays,Tampa Bay Rays,19
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,st-louis-cardinals,St. Louis Cardinals,20
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,baltimore-orioles,Baltimore Orioles,21
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,athletics,Athletics,22
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,miami-marlins,Miami Marlins,23
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,los-angeles-angels,Los Angeles Angels,24
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,atlanta-braves,Atlanta Braves,25
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,minnesota-twins,Minnesota Twins,26
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,pittsburgh-pirates,Pittsburgh Pirates,27
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,washington-nationals,Washington Nationals,28
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,chicago-whitesox,Chicago White Sox,29
+2025-09-14,https://www.mlb.com/news/power-rankings-for-week-of-sept-14-2025,colorado-rockies,Colorado Rockies,30
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,milwaukee-brewers,Milwaukee Brewers,1
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,philadeliphia-phillies,Philadelphia Phillies,2
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,los-angeles-dodgers,Los Angeles Dodgers,3
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,toronto-bluejays,Toronto Blue Jays,4
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,chicago-cubs,Chicago Cubs,5
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,seattle-mariners,Seattle Mariners,6
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,new-york-yankees,New York Yankees,7
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,boston-redsox,Boston Red Sox,8
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,cleveland-guardians,Cleveland Guardians,9
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,detroit-tigers,Detroit Tigers,10
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,san-diego-padres,San Diego Padres,11
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,houston-astros,Houston Astros,12
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,new-york-mets,New York Mets,13
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,cincinnati-reds,Cincinnati Reds,14
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,arizona-diamondbacks,Arizona Diamondbacks,15
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,texas-rangers,Texas Rangers,16
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,kansas-city-royals,Kansas City Royals,17
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,san-francisco-giants,San Francisco Giants,18
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,tampa-bay-rays,Tampa Bay Rays,19
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,miami-marlins,Miami Marlins,20
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,st-louis-cardinals,St. Louis Cardinals,21
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,athletics,Athletics,22
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,atlanta-braves,Atlanta Braves,23
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,baltimore-orioles,Baltimore Orioles,24
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,los-angeles-angels,Los Angeles Angels,25
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,pittsburgh-pirates,Pittsburgh Pirates,26
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,minnesota-twins,Minnesota Twins,27
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,washington-nationals,Washington Nationals,28
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,chicago-whitesox,Chicago White Sox,29
+2025-09-21,https://www.mlb.com/news/power-rankings-for-week-of-sept-21-2025,colorado-rockies,Colorado Rockies,30
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,philadeliphia-phillies,Philadelphia Phillies,1
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,los-angeles-dodgers,Los Angeles Dodgers,2
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,seattle-mariners,Seattle Mariners,3
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,milwaukee-brewers,Milwaukee Brewers,4
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,new-york-yankees,New York Yankees,5
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,toronto-bluejays,Toronto Blue Jays,6
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,chicago-cubs,Chicago Cubs,7
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,san-diego-padres,San Diego Padres,8
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,boston-redsox,Boston Red Sox,9
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,detroit-tigers,Detroit Tigers,10
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,cleveland-guardians,Cleveland Guardians,11
+2025-09-28,https://www.mlb.com/news/power-rankings-entering-2025-postseason,cincinnati-reds,Cincinnati Reds,12
