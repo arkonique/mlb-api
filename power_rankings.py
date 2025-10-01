@@ -1,6 +1,7 @@
 # power_rankings.py
 # Script to scrape MLB power rankings from MLB.com using Selenium and store them in a DataFrame
 import os
+import shutil
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options

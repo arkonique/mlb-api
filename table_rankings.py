@@ -11,9 +11,18 @@ from selenium.webdriver.edge.options import Options
 from power_rankings import get_all_teams, match_team, get_webdriver
 
 # Usage:
-driver = get_webdriver()
+TEAMS = None
+TMS = None
 
-TEAMS, TMS = get_all_teams(driver)
+def get_teams_and_tms():
+    global TEAMS, TMS
+    if TEAMS is None or TMS is None:
+        driver = get_webdriver()
+        try:
+            TEAMS, TMS = get_all_teams(driver)
+        finally:
+            driver.quit()
+    return TEAMS, TMS
 
 def sunday_range(start="2025-03-01", end="2025-10-31"):
     """

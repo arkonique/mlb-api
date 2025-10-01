@@ -24,6 +24,7 @@ def home():
 @app.route("/teams")
 def teams():
     global TEAMS, TMS
+    get_teams_and_tms()
     teams = TEAMS
     tms = TMS
     return {"teams": teams, "tms": tms}
