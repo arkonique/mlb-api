@@ -14,35 +14,24 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 
 def get_webdriver():
     """
-    Uses local Edge when running on your Windows machine;
-    uses headless Chrome when running on Heroku.
+    Chrome-only, works locally and on Heroku when using the chrome-for-testing buildpack.
+    The buildpack places 'chrome' and 'chromedriver' on PATH.
     """
-    if os.getenv("GOOGLE_CHROME_BIN"):
-        # --- Heroku path (Linux) ---
-        chrome_options = ChromeOptions()
-        chrome_options.binary_location = os.environ["GOOGLE_CHROME_BIN"]
-        chrome_options.add_argument("--headless=new")
-        chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.add_argument("--window-size=1920,1080")
+    opts = ChromeOptions()
+    opts.add_argument("--headless=new")
+    opts.add_argument("--no-sandbox")
+    opts.add_argument("--disable-dev-shm-usage")
+    opts.add_argument("--window-size=1920,1080")
 
-        service = ChromeService(executable_path=os.environ["CHROMEDRIVER_PATH"])
-        return webdriver.Chrome(service=service, options=chrome_options)
-    else:
-        # --- Local dev path (Windows, Edge) ---
-        from selenium.webdriver.edge.service import Service as EdgeService
-        from selenium.webdriver.edge.options import Options as EdgeOptions
-        edge_options = EdgeOptions()
-        edge_options.add_argument("--headless=new")
-        edge_options.add_argument("--disable-gpu")
-        edge_options.add_argument("--log-level=3")
-        service = EdgeService(
-            # your local exe path
-            r"C:\Users\arkonique\Projects\power-rankings\msedgedriver.exe"
-        )
-        return webdriver.Edge(service=service, options=edge_options)
+    # Prefer explicit binaries if discoverable; otherwise Selenium will use PATH.
+    chrome_bin = shutil.which("chrome")
+    if chrome_bin:
+        opts.binary_location = chrome_bin
 
+    driver_path = shutil.which("chromedriver")
+    service = ChromeService(executable_path=driver_path) if driver_path else ChromeService()
+
+    return webdriver.Chrome(service=service, options=opts)
 
 def get_all_articles(start_date, end_date, page, driver):
     SEARCHSTART = start_date
