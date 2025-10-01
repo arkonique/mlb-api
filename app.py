@@ -21,6 +21,20 @@ YEAR = 2025  # default year
 def home():
     return {"ok": True}
 
+@app.route("/color")
+def color():
+    team_code = request.args.get("team")
+    if not team_code:
+        return {"error": "team param required"}, 400
+    # read color from data/team_colors.json
+    colors_path = "data/team_colors.json"
+    with open(colors_path, "r") as f:
+        colors = json.load(f)
+    color = colors.get(team_code)
+    if not color:
+        return {"error": f"unknown team code: {team_code}"}, 400
+    return {"team": team_code, "color": color}
+
 @app.route("/teams")
 def teams():
     global TEAMS, TMS

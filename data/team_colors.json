@@ -1,0 +1,242 @@
+{
+    "ARI": {
+        "color": [
+            199,
+            17,
+            40
+        ],
+        "association": "primary"
+    },
+    "ATH": {
+        "color": [
+            0,
+            98,
+            65
+        ],
+        "association": "primary"
+    },
+    "ATL": {
+        "color": [
+            218,
+            4,
+            44
+        ],
+        "association": "primary"
+    },
+    "BAL": {
+        "color": [
+            255,
+            68,
+            0
+        ],
+        "association": "primary"
+    },
+    "BOS": {
+        "color": [
+            220,
+            44,
+            55
+        ],
+        "association": "primary"
+    },
+    "CHC": {
+        "color": [
+            0,
+            48,
+            138
+        ],
+        "association": "primary"
+    },
+    "CWS": {
+        "color": [
+            35,
+            31,
+            32
+        ],
+        "association": "primary"
+    },
+    "CIN": {
+        "color": [
+            231,
+            0,
+            25
+        ],
+        "association": "primary"
+    },
+    "CLE": {
+        "color": [
+            255,
+            18,
+            53
+        ],
+        "association": "primary"
+    },
+    "COL": {
+        "color": [
+            111,
+            52,
+            0
+        ],
+        "association": "secondary"
+    },
+    "DET": {
+        "color": [
+            5,
+            35,
+            66
+        ],
+        "association": "primary"
+    },
+    "HOU": {
+        "color": [
+            255,
+            111,
+            11
+        ],
+        "association": "secondary"
+    },
+    "KAN": {
+        "color": [
+            0,
+            71,
+            133
+        ],
+        "association": "primary"
+    },
+    "LAA": {
+        "color": [
+            218,
+            0,
+            28
+        ],
+        "association": "secondary"
+    },
+    "LAD": {
+        "color": [
+            0,
+            90,
+            160
+        ],
+        "association": "primary"
+    },
+    "MIA": {
+        "color": [
+            0,
+            176,
+            242
+        ],
+        "association": "secondary"
+    },
+    "MIL": {
+        "color": [
+            0,
+            36,
+            75
+        ],
+        "association": "primary"
+    },
+    "MIN": {
+        "color": [
+            0,
+            25,
+            63
+        ],
+        "association": "secondary"
+    },
+    "NYM": {
+        "color": [
+            255,
+            89,
+            0
+        ],
+        "association": "primary"
+    },
+    "NYY": {
+        "color": [
+            0,
+            31,
+            72
+        ],
+        "association": "primary"
+    },
+    "PHI": {
+        "color": [
+            255,
+            17,
+            36
+        ],
+        "association": "primary"
+    },
+    "PIT": {
+        "color": [
+            255,
+            185,
+            0
+        ],
+        "association": "primary"
+    },
+    "SD": {
+        "color": [
+            47,
+            31,
+            22
+        ],
+        "association": "primary"
+    },
+    "SF": {
+        "color": [
+            255,
+            90,
+            16
+        ],
+        "association": "primary"
+    },
+    "SEA": {
+        "color": [
+            0,
+            91,
+            91
+        ],
+        "association": "secondary"
+    },
+    "STL": {
+        "color": [
+            222,
+            2,
+            13
+        ],
+        "association": "primary"
+    },
+    "TB": {
+        "color": [
+            9,
+            44,
+            92
+        ],
+        "association": "primary"
+    },
+    "TEX": {
+        "color": [
+            0,
+            46,
+            123
+        ],
+        "association": "secondary"
+    },
+    "TOR": {
+        "color": [
+            0,
+            73,
+            145
+        ],
+        "association": "secondary"
+    },
+    "WAS": {
+        "color": [
+            205,
+            16,
+            65
+        ],
+        "association": "primary"
+    }
+}
