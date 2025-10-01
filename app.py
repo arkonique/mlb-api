@@ -27,8 +27,8 @@ def teams():
     # update teams from file
     if not TEAMS or not TMS:
         year = int(request.args.get("year", 2025))
-        teams_path = f"teams_{year}.json"
-        tms_path = f"tms_{year}.json"
+        teams_path = f"data/teams_{year}.json"
+        tms_path = f"data/tms_{year}.json"
         if os.path.isfile(teams_path) and os.path.isfile(tms_path):
             with open(teams_path, "r") as f:
                 TEAMS = json.load(f)
@@ -48,7 +48,7 @@ def power():
         return {"power": POWER.to_dict(orient="records"), "teams": TEAMS, "tms": TMS}
 
     # 2) If cache is empty, prefer on-disk CSV (do NOT touch TEAMS/TMS)
-    csv_path = f"power_rankings_{year}.csv"
+    csv_path = f"data/power_rankings_{year}.csv"
     if os.path.isfile(csv_path):
         df = pd.read_csv(csv_path)
         if "date" in df.columns:
@@ -76,7 +76,7 @@ def standings():
         return {"standings": STANDINGS.to_dict(orient="records")}
 
     # CSV fallback
-    csv_path = f"standings_{year}.csv"
+    csv_path = f"data/standings_{year}.csv"
     if os.path.isfile(csv_path):
         df = pd.read_csv(csv_path)
         if "date" in df.columns:
@@ -100,7 +100,7 @@ def odds():
     if not ODDS.empty and YEAR == year:
         return {"odds": ODDS.to_dict(orient="records")}
 
-    csv_path = f"odds_{year}.csv"
+    csv_path = f"data/odds_{year}.csv"
     if os.path.isfile(csv_path):
         df = pd.read_csv(csv_path)
         if "date" in df.columns:
@@ -123,7 +123,7 @@ def batting():
     if not BATTING.empty and YEAR == year:
         return {"batting": BATTING.to_dict(orient="records")}
 
-    csv_path = f"batting_stats_{year}.csv"
+    csv_path = f"data/batting_stats_{year}.csv"
     if os.path.isfile(csv_path):
         df = pd.read_csv(csv_path)
         if "date" in df.columns:
@@ -146,7 +146,7 @@ def pitching():
     if not PITCHING.empty and YEAR == year:
         return {"pitching": PITCHING.to_dict(orient="records")}
 
-    csv_path = f"pitching_stats_{year}.csv"
+    csv_path = f"data/pitching_stats_{year}.csv"
     if os.path.isfile(csv_path):
         df = pd.read_csv(csv_path)
         if "date" in df.columns:
@@ -169,7 +169,7 @@ def fielding():
     if not FIELDING.empty and YEAR == year:
         return {"fielding": FIELDING.to_dict(orient="records")}
 
-    csv_path = f"fielding_stats_{year}.csv"
+    csv_path = f"data/fielding_stats_{year}.csv"
     if os.path.isfile(csv_path):
         df = pd.read_csv(csv_path)
         if "date" in df.columns:
