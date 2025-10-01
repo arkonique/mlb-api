@@ -24,7 +24,16 @@ def home():
 @app.route("/teams")
 def teams():
     global TEAMS, TMS
-    get_teams_and_tms()
+    # update teams from file
+    if not TEAMS or not TMS:
+        year = int(request.args.get("year", 2025))
+        teams_path = f"teams_{year}.json"
+        tms_path = f"tms_{year}.json"
+        if os.path.isfile(teams_path) and os.path.isfile(tms_path):
+            with open(teams_path, "r") as f:
+                TEAMS = json.load(f)
+            with open(tms_path, "r") as f:
+                TMS = json.load(f)
     teams = TEAMS
     tms = TMS
     return {"teams": teams, "tms": tms}
