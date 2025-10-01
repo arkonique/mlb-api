@@ -1,0 +1,11 @@
+Flask==3.1.2
+hmmlearn==0.3.3
+mlb_statsapi==1.9.0
+numpy==2.3.3
+pandas==2.3.3
+Requests==2.32.5
+scikit_learn==1.7.2
+scipy==1.16.2
+selenium==4.32.0
+statsmodels==0.14.5
+tqdm==4.67.1
