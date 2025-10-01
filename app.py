@@ -3,6 +3,10 @@ from mlb_analytics import *
 import pandas as pd
 import numpy as np
 import os
+import json
+import base64
+from io import BytesIO
+import requests
 
 app = Flask(__name__)
 
@@ -34,6 +38,26 @@ def color():
     if not color:
         return {"error": f"unknown team code: {team_code}"}, 400
     return {"team": team_code, "color": color}
+
+@app.route("/logo")
+def logo():
+    team_code = request.args.get("team")
+    if not team_code:
+        return {"error": "team param required"}, 400
+    logo_url = f"https://a.espncdn.com/i/teamlogos/mlb/500/{team_code.lower()}.png"
+    base_64 = None
+    # convert to base64
+    try:
+        response = requests.get(logo_url)
+        if response.status_code == 200:
+            image = BytesIO(response.content)
+            base_64 = base64.b64encode(image.getvalue()).decode('utf-8')
+            image_data = f"data:image/png;base64,{base_64}"
+            return {"team": team_code, "logo": image_data, "url": logo_url}
+    except Exception as e:
+        print(f"Error fetching logo for {team_code}: {e}")
+
+    return {"team": team_code, "url": logo_url}
 
 @app.route("/teams")
 def teams():

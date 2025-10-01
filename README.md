@@ -128,7 +128,9 @@ curl "http://localhost:5000/granger?team=TOR&max_lag=3"
 | -------------- | ------ | ------------------------------------- | ------------------------------------------------------------------------------------ |
 | `/`            | GET    | Health check                          | Returns `{ "ok": true }`.                                                            |
 | `/teams`       | GET    | Team metadata (names & codes)         | Reads from `data/teams_{year}.json` and `data/tms_{year}.json` if present.           |
-| `/power`       | GET    | Weekly power rankings                 | Caches in memory; falls back to `data/power_rankings_{year}.csv` or `sunday_power`.  |
+| `/colors`      | GET    | Team Colors (RGB values)              | Reads from `data/team_colors.json` if present, else uses built-in defaults.          |
+| `/logo`        | GET    | Team logo (base64-encoded)            | Fetches from ESPN and returns as base64 string.                                       |
+| `/power`       | GET    | Weekly power rankings time series     | Caches in memory; CSV fallback `data/power_rankings_{year}.csv` else `sunday_power`.  |
 | `/standings`   | GET    | MLB standings time series             | Caches in memory; CSV fallback `data/standings_{year}.csv` else `sunday_standings`.  |
 | `/odds`        | GET    | Playoff odds time series              | Caches in memory; CSV fallback `data/odds_{year}.csv` else `sunday_odds`.            |
 | `/batting`     | GET    | Batting stats snapshot/series         | CSV fallback `data/batting_stats_{year}.csv` else `get_batting_stats`.               |
@@ -158,8 +160,6 @@ curl "http://localhost:5000/granger?team=TOR&max_lag=3"
   curl http://localhost:5000/
   ```
 
-
-
 ---
 
 ### `/teams`
@@ -175,7 +175,35 @@ curl "http://localhost:5000/granger?team=TOR&max_lag=3"
   ```
 
 
+---
 
+
+  ###  `/color`
+
+  * **Method:** GET
+  * **Query Parameters:** `team` (string, required) — team code (e.g., `TOR`, `NYY`)
+  * **Returns:** `{ "team": <string>, "color": { "association": <string>, "color": [<int>, <int>, <int>] } }`
+  * **Notes:** Reads from `data/team_colors.json` if present; otherwise uses built-in defaults.
+  * **Example:**
+
+    ```bash
+    curl "http://localhost:5000/color?team=TOR"
+    ```
+
+
+---
+
+### `/logo`
+
+* **Method:** GET
+* **Query Parameters:** `team` (string, required) — team code (e.g., `TOR`, `NYY`)
+* **Returns:** `{ "team": <string>, "logo": <string|null>, "url": <string> }`
+* **Notes:** Fetches team logo from ESPN and returns as base64-encoded string.
+* **Example:**
+
+  ```bash
+  curl "http://localhost:5000/logo?team=TOR"
+  ```
 ---
 
 ### `/power`
