@@ -8,16 +8,11 @@ from tqdm import tqdm
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service
 from selenium.webdriver.edge.options import Options
-from power_rankings import get_all_teams, match_team
+from power_rankings import get_all_teams, match_team, get_webdriver
 
+# Usage:
+driver = get_webdriver()
 
-
-opts = Options()
-opts.add_argument("--headless=new")  # run Edge in headless mode
-opts.add_argument("--disable-gpu")   # (optional) needed on some Windows setups
-opts.add_argument("--log-level=3")   # 0=INFO, 1=WARNING, 2=LOG_ERROR, 3=LOG_FATAL
-service = Service(os.path.abspath("C:/Users/arkonique/Projects/power-rankings/msedgedriver.exe"))
-driver = webdriver.Edge(service=service, options=opts)
 TEAMS, TMS = get_all_teams(driver)
 
 def sunday_range(start="2025-03-01", end="2025-10-31"):

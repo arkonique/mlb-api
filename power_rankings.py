@@ -8,6 +8,41 @@ from selenium.webdriver.common.by import By
 from datetime import datetime, timedelta
 import pandas as pd
 from tqdm import tqdm
+from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+
+
+def get_webdriver():
+    """
+    Uses local Edge when running on your Windows machine;
+    uses headless Chrome when running on Heroku.
+    """
+    if os.getenv("GOOGLE_CHROME_BIN"):
+        # --- Heroku path (Linux) ---
+        chrome_options = ChromeOptions()
+        chrome_options.binary_location = os.environ["GOOGLE_CHROME_BIN"]
+        chrome_options.add_argument("--headless=new")
+        chrome_options.add_argument("--disable-gpu")
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--window-size=1920,1080")
+
+        service = ChromeService(executable_path=os.environ["CHROMEDRIVER_PATH"])
+        return webdriver.Chrome(service=service, options=chrome_options)
+    else:
+        # --- Local dev path (Windows, Edge) ---
+        from selenium.webdriver.edge.service import Service as EdgeService
+        from selenium.webdriver.edge.options import Options as EdgeOptions
+        edge_options = EdgeOptions()
+        edge_options.add_argument("--headless=new")
+        edge_options.add_argument("--disable-gpu")
+        edge_options.add_argument("--log-level=3")
+        service = EdgeService(
+            # your local exe path
+            r"C:\Users\arkonique\Projects\power-rankings\msedgedriver.exe"
+        )
+        return webdriver.Edge(service=service, options=edge_options)
+
 
 def get_all_articles(start_date, end_date, page, driver):
     SEARCHSTART = start_date
@@ -169,13 +204,7 @@ def get_rankings_from_article(url, teams, driver):
     return rankings
 
 def rankings_wrapper(year):
-    opts = Options()
-    opts.add_argument("--headless=new")  # run Edge in headless mode
-    opts.add_argument("--disable-gpu")   # (optional) needed on some Windows setups
-    opts.add_argument("--log-level=3")   # 0=INFO, 1=WARNING, 2=LOG_ERROR, 3=LOG_FATAL
-    service = Service(os.path.abspath("C:/Users/arkonique/Projects/power-rankings/msedgedriver.exe"))
-    driver = webdriver.Edge(service=service, options=opts)
-
+    driver = get_webdriver()
     YEAR = 2025
     SEARCHSTART = f"{YEAR-1}-11-01"
     SEARCHEND = f"{YEAR}-10-31"

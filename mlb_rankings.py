@@ -4,12 +4,7 @@ from table_rankings import *
 from io import StringIO
 
 def get_batting_stats(year=2025):
-    opts = Options()
-    opts.add_argument("--headless=new")  # run Edge in headless mode
-    opts.add_argument("--disable-gpu")   # (optional) needed on some Windows setups
-    opts.add_argument("--log-level=3")   # 0=INFO, 1=WARNING, 2=LOG_ERROR, 3=LOG_FATAL
-    service = Service(os.path.abspath("C:/Users/arkonique/Projects/power-rankings/msedgedriver.exe"))
-    driver = webdriver.Edge(service=service, options=opts)
+    driver = get_webdriver()
     url = f"https://www.baseball-reference.com/leagues/majors/{year}.shtml#all_teams_standard_batting"
 
     # get the url and parse the table #teams_standard_batting
@@ -62,12 +57,7 @@ def get_batting_stats(year=2025):
     return df
 
 def get_pitching_stats(year=2025):
-    opts = Options()
-    opts.add_argument("--headless=new")  # run Edge in headless mode
-    opts.add_argument("--disable-gpu")   # (optional) needed on some Windows setups
-    opts.add_argument("--log-level=3")   # 0=INFO, 1=WARNING, 2=LOG_ERROR, 3=LOG_FATAL
-    service = Service(os.path.abspath("C:/Users/arkonique/Projects/power-rankings/msedgedriver.exe"))
-    driver = webdriver.Edge(service=service, options=opts)
+    driver = get_webdriver()
     url = f"https://www.baseball-reference.com/leagues/majors/{year}.shtml#all_teams_standard_pitching"
 
     # get the url and parse the table #teams_standard_pitching
@@ -128,12 +118,7 @@ def get_pitching_stats(year=2025):
     return df
 
 def get_fielding_stats(year=2025):
-    opts = Options()
-    opts.add_argument("--headless=new")  # run Edge in headless mode
-    opts.add_argument("--disable-gpu")   # (optional) needed on some Windows setups
-    opts.add_argument("--log-level=3")   # 0=INFO, 1=WARNING, 2=LOG_ERROR, 3=LOG_FATAL
-    service = Service(os.path.abspath("C:/Users/arkonique/Projects/power-rankings/msedgedriver.exe"))
-    driver = webdriver.Edge(service=service, options=opts)
+    driver = get_webdriver()
     url = f"https://www.baseball-reference.com/leagues/majors/{year}.shtml#all_teams_standard_fielding"
 
     # get the url and parse the table #teams_standard_fielding

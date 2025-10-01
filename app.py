@@ -113,7 +113,7 @@ def batting():
     if not BATTING.empty and YEAR == year:
         return {"batting": BATTING.to_dict(orient="records")}
 
-    csv_path = f"batting_{year}.csv"
+    csv_path = f"batting_stats_{year}.csv"
     if os.path.isfile(csv_path):
         df = pd.read_csv(csv_path)
         if "date" in df.columns:
@@ -136,7 +136,7 @@ def pitching():
     if not PITCHING.empty and YEAR == year:
         return {"pitching": PITCHING.to_dict(orient="records")}
 
-    csv_path = f"pitching_{year}.csv"
+    csv_path = f"pitching_stats_{year}.csv"
     if os.path.isfile(csv_path):
         df = pd.read_csv(csv_path)
         if "date" in df.columns:
@@ -159,7 +159,7 @@ def fielding():
     if not FIELDING.empty and YEAR == year:
         return {"fielding": FIELDING.to_dict(orient="records")}
 
-    csv_path = f"fielding_{year}.csv"
+    csv_path = f"fielding_stats_{year}.csv"
     if os.path.isfile(csv_path):
         df = pd.read_csv(csv_path)
         if "date" in df.columns:
