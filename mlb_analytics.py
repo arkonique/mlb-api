@@ -259,7 +259,6 @@ def build_delta_kde_and_hist(
                 "team_id": team_id,
                 "label": label,
                 "density": float(y),
-                "color": color,
                 "bandwidth": bw_vals[code],
             })
 
@@ -275,11 +274,10 @@ def build_delta_kde_and_hist(
                 "team_id": team_id,
                 "label": label,
                 "pdf": float(y),
-                "color": color,
             })
 
-    kde_df  = pd.DataFrame(rows_kde,  columns=["x","team_code","team_id","label","density","color","bandwidth"])
-    hist_df = pd.DataFrame(rows_hist, columns=["x","team_code","team_id","label","pdf","color"])
+    kde_df  = pd.DataFrame(rows_kde,  columns=["x","team_code","team_id","label","density","bandwidth"])
+    hist_df = pd.DataFrame(rows_hist, columns=["x","team_code","team_id","label","pdf"])
     peaks   = pd.Series(peak_vals, name="peak_x")
     bws     = pd.Series(bw_vals,   name="bandwidth")
 
@@ -661,7 +659,7 @@ def compute_trajectory_similarity(
     Returns a simple dict with the stats.
     """
 
-    use_mlb = (source == "mlb")
+    # use_mlb = (source == "mlb")
     # code -> id
     code_to_id = {code: tid for tid, code in team_codes.items()}
     if team_code_a not in code_to_id or team_code_b not in code_to_id:
@@ -671,7 +669,7 @@ def compute_trajectory_similarity(
     team_id_b = code_to_id[team_code_b]
     label_a   = team_names.get(team_id_a, team_code_a)
     label_b   = team_names.get(team_id_b, team_code_b)
-    src       = "mlb" if use_mlb else "power"
+    src       = source
 
     # 1) Pull series and align on common dates (inner join)
     sA = _rank_series_for_team(power, standings, team_id_a, team_names, src).rename("A")

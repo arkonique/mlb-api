@@ -1,78 +1,128 @@
 {
     "ARI": {
-        "color": [
+        "primary_color": [
             199,
             17,
             40
         ],
+        "secondary_color": [
+            0,
+            0,
+            0
+        ],
         "association": "primary"
     },
     "ATH": {
-        "color": [
+        "primary_color": [
             0,
             98,
             65
         ],
+        "secondary_color": [
+            0,
+            92,
+            58
+        ],
         "association": "primary"
     },
     "ATL": {
-        "color": [
+        "primary_color": [
             218,
             4,
             44
         ],
+        "secondary_color": [
+            0,
+            31,
+            64
+        ],
         "association": "primary"
     },
     "BAL": {
-        "color": [
+        "primary_color": [
             255,
             68,
+            0
+        ],
+        "secondary_color": [
+            0,
+            0,
             0
         ],
         "association": "primary"
     },
     "BOS": {
-        "color": [
+        "primary_color": [
             220,
             44,
             55
         ],
+        "secondary_color": [
+            0,
+            39,
+            88
+        ],
         "association": "primary"
     },
     "CHC": {
-        "color": [
+        "primary_color": [
             0,
             48,
             138
         ],
+        "secondary_color": [
+            237,
+            49,
+            48
+        ],
         "association": "primary"
     },
     "CWS": {
-        "color": [
-            35,
-            31,
-            32
+        "primary_color": [
+            128,
+            128,
+            128
+        ],
+        "secondary_color": [
+            192,
+            192,
+            192
         ],
         "association": "primary"
     },
     "CIN": {
-        "color": [
+        "primary_color": [
             231,
             0,
             25
         ],
+        "secondary_color": [
+            0,
+            0,
+            0
+        ],
         "association": "primary"
     },
     "CLE": {
-        "color": [
+        "primary_color": [
             255,
             18,
             53
         ],
+        "secondary_color": [
+            0,
+            42,
+            94
+        ],
         "association": "primary"
     },
     "COL": {
-        "color": [
+        "primary_color": [
+            52,
+            0,
+            111
+        ],
+        "secondary_color": [
             111,
             52,
             0
@@ -80,15 +130,25 @@
         "association": "secondary"
     },
     "DET": {
-        "color": [
+        "primary_color": [
             5,
             35,
             66
         ],
+        "secondary_color": [
+            0,
+            30,
+            62
+        ],
         "association": "primary"
     },
     "HOU": {
-        "color": [
+        "primary_color": [
+            1,
+            45,
+            98
+        ],
+        "secondary_color": [
             255,
             111,
             11
@@ -96,15 +156,25 @@
         "association": "secondary"
     },
     "KAN": {
-        "color": [
+        "primary_color": [
             0,
             71,
             133
         ],
+        "secondary_color": [
+            186,
+            151,
+            101
+        ],
         "association": "primary"
     },
     "LAA": {
-        "color": [
+        "primary_color": [
+            156,
+            33,
+            48
+        ],
+        "secondary_color": [
             218,
             0,
             28
@@ -112,15 +182,25 @@
         "association": "secondary"
     },
     "LAD": {
-        "color": [
+        "primary_color": [
             0,
             90,
             160
         ],
+        "secondary_color": [
+            0,
+            93,
+            165
+        ],
         "association": "primary"
     },
     "MIA": {
-        "color": [
+        "primary_color": [
+            0,
+            0,
+            0
+        ],
+        "secondary_color": [
             0,
             176,
             242
@@ -128,15 +208,25 @@
         "association": "secondary"
     },
     "MIL": {
-        "color": [
+        "primary_color": [
             0,
             36,
             75
         ],
+        "secondary_color": [
+            255,
+            197,
+            0
+        ],
         "association": "primary"
     },
     "MIN": {
-        "color": [
+        "primary_color": [
+            255,
+            6,
+            47
+        ],
+        "secondary_color": [
             0,
             25,
             63
@@ -144,55 +234,90 @@
         "association": "secondary"
     },
     "NYM": {
-        "color": [
+        "primary_color": [
             255,
             89,
+            0
+        ],
+        "secondary_color": [
+            255,
+            90,
             0
         ],
         "association": "primary"
     },
     "NYY": {
-        "color": [
+        "primary_color": [
             0,
             31,
             72
         ],
+        "secondary_color": [
+            0,
+            31,
+            73
+        ],
         "association": "primary"
     },
     "PHI": {
-        "color": [
+        "primary_color": [
             255,
             17,
             36
         ],
+        "secondary_color": [
+            255,
+            17,
+            37
+        ],
         "association": "primary"
     },
     "PIT": {
-        "color": [
+        "primary_color": [
             255,
             185,
+            0
+        ],
+        "secondary_color": [
+            255,
+            184,
             0
         ],
         "association": "primary"
     },
     "SD": {
-        "color": [
+        "primary_color": [
             47,
             31,
             22
         ],
+        "secondary_color": [
+            48,
+            32,
+            23
+        ],
         "association": "primary"
     },
     "SF": {
-        "color": [
+        "primary_color": [
             255,
             90,
+            16
+        ],
+        "secondary_color": [
+            255,
+            92,
             16
         ],
         "association": "primary"
     },
     "SEA": {
-        "color": [
+        "primary_color": [
+            193,
+            207,
+            213
+        ],
+        "secondary_color": [
             0,
             91,
             91
@@ -200,23 +325,38 @@
         "association": "secondary"
     },
     "STL": {
-        "color": [
+        "primary_color": [
             222,
+            2,
+            13
+        ],
+        "secondary_color": [
+            224,
             2,
             13
         ],
         "association": "primary"
     },
     "TB": {
-        "color": [
+        "primary_color": [
             9,
             44,
             92
         ],
+        "secondary_color": [
+            9,
+            46,
+            96
+        ],
         "association": "primary"
     },
     "TEX": {
-        "color": [
+        "primary_color": [
+            224,
+            9,
+            25
+        ],
+        "secondary_color": [
             0,
             46,
             123
@@ -224,7 +364,12 @@
         "association": "secondary"
     },
     "TOR": {
-        "color": [
+        "primary_color": [
+            248,
+            0,
+            48
+        ],
+        "secondary_color": [
             0,
             73,
             145
@@ -232,10 +377,15 @@
         "association": "secondary"
     },
     "WAS": {
-        "color": [
+        "primary_color": [
             205,
             16,
             65
+        ],
+        "secondary_color": [
+            0,
+            39,
+            93
         ],
         "association": "primary"
     }

@@ -8,7 +8,13 @@ import base64
 from io import BytesIO
 import requests
 
-app = Flask(__name__)
+app = Flask(__name__,static_folder="wwwroot", static_url_path="")
+
+
+def df_to_records_without_nans(df: pd.DataFrame):
+    # Ensure object dtype so None survives JSON encoding
+    out = df.astype(object).where(pd.notnull(df), None)
+    return out.to_dict(orient="records")
 
 # Global variables to cache data
 POWER = pd.DataFrame()
@@ -23,7 +29,8 @@ YEAR = 2025  # default year
 
 @app.route("/")
 def home():
-    return {"ok": True}
+    # Serve page from wwwroot/index.html
+    return app.send_static_file("index.html")
 
 @app.route("/color")
 def color():
@@ -237,33 +244,47 @@ def ranks():
         team_codes=TMS,
         mode=mode
     )
-    return {"ranks": df.to_dict(orient="records")}
+    return {"ranks": df_to_records_without_nans(df)}
 
+def _series_to_native_dict(s: pd.Series) -> dict:
+    # Convert pandas/NumPy scalars to plain Python, and NaN -> None
+    out = {}
+    for k, v in s.items():
+        if pd.isna(v):
+            out[k] = None
+        else:
+            # cast to Python float (handles numpy.float64)
+            out[k] = float(v)
+    return out
 
 @app.route("/kdes")
 def kdes():
-    selected_codes = request.args.getlist("teams")  # list of team codes
+    selected_codes = request.args.getlist("teams")  # e.g., ?teams=TOR&teams=NYY
     source = request.args.get("source", "power")    # 'power' or 'mlb'
 
     if POWER.empty or STANDINGS.empty:
-        return {"error": "Data not loaded. Please fetch /power, /standings endpoints first."}, 400
+        return jsonify({"error": "Data not loaded. Please fetch /power and /standings first."}), 400
 
-    kde_data, hist_data, peaks, bw = build_delta_kde_and_hist(
+    # Optional: normalize codes to uppercase and de-dup
+    selected_codes = sorted({code.upper() for code in selected_codes}) if selected_codes else []
+
+    kde_df, hist_df, peaks, bw = build_delta_kde_and_hist(
         power=POWER,
         standings=STANDINGS,
-        team_names=TEAMS,
-        team_codes=TMS,
+        team_names=TEAMS,   # {team_id -> display name}
+        team_codes=TMS,     # {team_id -> TEAMCODE}
         selected_codes=selected_codes,
         source=source,
         grid=np.linspace(-15, 15, 300),
-        bin_edges=np.linspace(-15, 15, 31)
+        bin_edges=np.linspace(-15, 15, 31),
     )
-    return {
-        "kde_data": kde_data.to_dict(orient="records"),
-        "hist_data": hist_data.to_dict(orient="records"),
-        "peaks": peaks,
-        "bandwidth": bw
-    }
+
+    return jsonify({
+        "kde_data": kde_df.to_dict(orient="records"),
+        "hist_data": hist_df.to_dict(orient="records"),
+        "peaks": _series_to_native_dict(peaks),        # { "TOR": 0.5, "NYY": -1.0, ... }
+        "bandwidth": _series_to_native_dict(bw),       # { "TOR": 0.62, ... }
+    })
 
 
 @app.route("/volatility")
@@ -294,7 +315,7 @@ def stability():
     if POWER.empty or STANDINGS.empty:
         return {"error": "Data not loaded. Please fetch /power, /standings endpoints first."}, 400
 
-    stab_df, _ = build_acf_stability_timeseries(
+    stab_df = build_acf_stability_timeseries(
         power=POWER,
         standings=STANDINGS,
         team_names=TEAMS,
@@ -334,7 +355,7 @@ def consistency():
 @app.route("/granger")
 def granger():
     team_code = request.args.get("team")            # single team code
-    max_lag = int(request.args.get("max_lag", 4))   # max lag for Granger test
+    max_lag = int(request.args.get("maxlag", 4))   # max lag for Granger test
 
     if POWER.empty or STANDINGS.empty:
         return {"error": "Data not loaded. Please fetch /power, /standings endpoints first."}, 400
