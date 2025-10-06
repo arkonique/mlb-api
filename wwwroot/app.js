@@ -43,9 +43,15 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
         await createContentBox(TEAMS, TMS, "Causality", app, "container-5", "team-radios-5", "mode-5", "chart-div-5", "radio", [], [getGranger,null, statsFill], 'TOR', "This chart tests whether power rankings can predict actual MLB rankings - basically, how reliable they even are. Each bar shows a lag, meaning how many weeks back the power ranking is compared to the MLB rank. If a bar falls below the red line, it means the power rankings have predictive power when looking back that many weeks. The lower the bar, the stronger the prediction. If all bars are above the line, it means power rankings don't really help predict actual performance of that team. Pick any team from the selector to see how well their power rankings forecast their real-world results.");
         styleTeamSelectors();
-        await createContentBox(TEAMS, TMS, "Similarity", app, "container-7", "team-checkboxes-7", "mode-7", "chart-div-7", "checkbox", ["mlb", "power"], [getSimilarity, null, getSimilarityData],'TOR',"Here you can see the similarity between any two teams. The Average Rank Difference shows how far apart they usually sit in the standings. Similarity in Week-by-Week Changes captures how often they move in the same direction - a higher value means they rise and fall together, while a negative one means opposite momentum. Overall Trend Similarity reflects whether their trends align over time. Finally, the Overall Trajectory Similarity score summarizes how closely their season paths match overall - higher means more alike. Select any two teams from the selector to see how closely their seasons mirror each other.");
+        await createContentBox(TEAMS, TMS, "Similarity", app, "container-7", "team-checkboxes-7", "mode-7", "chart-div-7", "checkbox", ["mlb", "power"], [getSimilarity, null, getSimilarityData],'TOR,NYY',"Here you can see the similarity between any two teams. The Average Rank Difference shows how far apart they usually sit in the standings. Similarity in Week-by-Week Changes captures how often they move in the same direction - a higher value means they rise and fall together, while a negative one means opposite momentum. Overall Trend Similarity reflects whether their trends align over time. Finally, the Overall Trajectory Similarity score summarizes how closely their season paths match overall - higher means more alike. Select any two teams from the selector to see how closely their seasons mirror each other.");
         styleTeamSelectors();
-
+        // inject a div class break between #mode-7-container and #chart-div-7
+        const mode7Container = document.getElementById("mode-7-container");
+        if (mode7Container) {
+            const breakDiv = document.createElement("div");
+            breakDiv.classList.add("break");
+            mode7Container.insertAdjacentElement("afterend", breakDiv);
+        }
 
         // manually create chart-div-6 content box
         const box6 = document.createElement("div");
@@ -75,6 +81,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         styleTeamSelectors();
         // add event listener to checkboxes and radio buttons to restyle on change
         document.body.addEventListener("change", styleTeamSelectors);
+
+
+
     } catch (error) {
         console.error("Error fetching data:", error);
     }
@@ -282,12 +291,10 @@ async function createTeamRadioButtons(teams,tms,parent, containerId, modeName, c
         radio.addEventListener("change", async () => {
             eventupdate[0](radio.value, containerId, modeName, chartDivId);
             if (eventupdate.length > 1 && eventupdate[1] != null) {
-                console.log("Updating content1 via callback");
                 const passId = parent.id.replace("-box", "");
                 p1.innerHTML = await eventupdate[1](passId);
             }
             if (eventupdate.length > 2 && eventupdate[2] != null) {
-                console.log("Updating content2 via callback");
                 const passId = parent.id.replace("-box", "");
                 p2.innerHTML = await eventupdate[2](passId);
             }
@@ -561,7 +568,6 @@ async function getKDEs(code, checkboxContainerId, modeName, chart_div, noMarkers
         const query = selectedTeams.map(team => `teams=${team}`).join("&") + `&source=${mode}`;
         const data = await fetch(`/kdes?${query}`).then(res => res.json());
         const wrangled = wrangleKDEPayload(data, mode);
-        console.log("KDE Data:", wrangled);
         renderKDE(wrangled, chart_div, noMarkers=true, drawLine=true, drawShading=false);
         
     }
@@ -1019,7 +1025,6 @@ function renderGranger(data, chartDivId) {
 }
 
 async function statsFill(containerId) {
-  console.log(`Filling stats for container ${containerId}`);
   const checked = document.querySelector(`#${containerId}-box input.team-radio:checked`);
   const team = checked ? checked.value : defaultTeam;
 
@@ -1147,7 +1152,11 @@ async function getClusters(chart_div) {
 
     // remove legend
     await Plotly.relayout(figDiv, {
-        'showlegend': false
+        'showlegend': false,
+        // remove background color of the legend and plot area
+        'legend.bgcolor': 'rgba(0,0,0,0)',
+        'plot_bgcolor': 'rgba(0,0,0,0)',
+        'paper_bgcolor': 'rgba(0,0,0,0)'
     });
 
 
@@ -1397,15 +1406,45 @@ async function getClusters2(chart_div, zMetric = "winpct") {
 
 // 7. Compare functions
 
+
+function seedInitialTeamsOnce(code, checkboxContainerId, typeClass = "team-checkbox") {
+  const container = document.getElementById(checkboxContainerId);
+  if (!container) return;
+
+  // Skip if we've already seeded this container
+  if (container.dataset.seeded === "1") return;
+
+  // Only seed on a "fresh" UI (0 or 1 already checked)
+  const current = Array.from(container.querySelectorAll(`input.${typeClass}:checked`)).map(i => i.value);
+  if (current.length > 1) { container.dataset.seeded = "1"; return; }
+
+  // Expand incoming codes like "TOR,NYY"
+  const incoming = (Array.isArray(code) ? code : String(code || ""))
+    .split(",").map(s => s.trim()).filter(Boolean);
+
+  if (incoming.length >= 2) {
+    const want = incoming.slice(0, 2);
+    container.querySelectorAll(`input.${typeClass}`).forEach(i => {
+      i.checked = want.includes(i.value);
+    });
+  }
+
+  // Mark as done so we never re-enforce
+  container.dataset.seeded = "1";
+}
+
+
 async function getSimilarity(code, checkboxContainerId, modeName, chart_div, noMarkers = false, drawLine = false, drawShading = false, typeClass="team-checkbox"){
+    seedInitialTeamsOnce(code, checkboxContainerId, typeClass);
     // check if two teams are selected
     const selectedTeams = Array.from(
         document.querySelectorAll(`#${checkboxContainerId} input.${typeClass}:checked`)
     ).map(checkbox => checkbox.value);
+    // check default if none selected
+
     if (selectedTeams.length !== 2) {
         // clear the chart div
         document.getElementById(chart_div).innerHTML = "<p style='color:red;'>Please select exactly two teams for comparison.</p>";
-        console.log("Please select exactly two teams for comparison.");
         return;
     }
     // if two teams are selected, proceed, remove the red text and run getRankings
@@ -1414,13 +1453,11 @@ async function getSimilarity(code, checkboxContainerId, modeName, chart_div, noM
 }
 
 async function getSimilarityData(containerId){
-    console.log(`Getting similarity data for container ${containerId}`);
     const selectedTeams = Array.from(
         document.querySelectorAll(`#${containerId}-box input.team-checkbox:checked`)
     ).map(checkbox => checkbox.value);
 
     if (selectedTeams.length !== 2) {
-        console.log(selectedTeams);
         return null;
     }
     const teamA = selectedTeams[0];
@@ -1440,7 +1477,6 @@ async function getSimilarityData(containerId){
         <p class="similarity-corr-levels"><strong>Overall Trend Similarity:</strong> ${stats.corr_levels.toFixed(2)*100}%</p>
         <p class="similarity-dtw-similarity-z"><strong>Overall Trajectory Similarity:</strong> ${stats.dtw_similarity_z.toFixed(2)}%</p>
     `;
-    console.log(string)
     return string;
 }
 
@@ -1467,7 +1503,6 @@ async function getHmm(code, checkboxContainerId, modeName, chart_div, noMarkers 
     const newColors = states.map(s => state_color_map[s.state] || "#000000");
     // add black to newColors because initial state is null
     newColors.unshift("#000000");
-    console.log(newColors);
     Plotly.restyle(el, { 'marker.color': [newColors] });
     // change hovertemplate to include state label
     const newHoverTemplate = states.map(s =>
@@ -1533,12 +1568,10 @@ async function getHmmData(containerId){
     const selectedTeams = Array.from(
         document.querySelectorAll(`#${containerId}-box input.team-radio:checked`)
     ).map(checkbox => checkbox.value);
-    console.log(selectedTeams);
     const query = `team=${selectedTeams[0]}`;
     const hmmData = await fetch(`/hmm?${query}`).then(res => res.json());
     // create a state array of the states
     const stateArray = hmmData.states.map(s => s.state);
-    console.log(stateArray);
     // get final state
     const finalState = hmmData.states[hmmData.states.length - 1];
     const string = `<p class="hmm-team"><strong>Team:</strong> ${getTeamFullNameFromCode(selectedTeams[0],TEAMS,TMS)}</p>
@@ -1551,7 +1584,6 @@ async function getHmmData(containerId){
 }
 
 function getProbfromTransitionMatrix(P, fromState, toState) {
-    console.log(fromState, toState);
     let Probability = P[fromState][toState];
     // round to 2 decimal places
     Probability = (Probability * 100).toFixed(2);

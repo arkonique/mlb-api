@@ -3,15 +3,35 @@
 }
 
 body {
+    /* background-color: #fefaf5; */
+    background-color: white;
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
     overflow-x: hidden;
     margin: 20px;
+    color: #5f5f5f
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Cantata One', serif; */
+    /* color: #222; */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #294263;
+    font-weight: 900;
+}
+
+h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
 }
 
 #main-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 5.5rem;
     margin-bottom: 10px;
 }
 
@@ -27,6 +47,10 @@ body {
     font-size: 1rem;
     font-style: italic;
     color: rgba(128, 128, 128, 0.5);
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .intro {
@@ -50,7 +74,7 @@ body {
     flex-wrap: wrap;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2); */
     background-color: rgb(0,73,145);
     width: 100%;
 }
@@ -135,7 +159,7 @@ body {
 }
 
 .mode-container {
-    background: black;
+    background: #294263;
     color: white;
     border-radius: 50px;
     width: fit-content;
@@ -147,7 +171,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 
@@ -178,8 +202,8 @@ body {
     height: 600px;
     margin-top: 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    background-color: white;
+    /* box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2); */
+    /* background-color: white; */
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -187,7 +211,7 @@ body {
     font-size: large;
 }
 
-#chart-div-5, #chart-div-8 {
+#chart-div-5, #chart-div-7, #chart-div-8 {
     width: 70%;
 }
 
@@ -197,17 +221,25 @@ body {
     font-size: 18px;
     color: #333;
     padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
 }
 
 
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
 .content-box-text1 {
-    background: #ededed;
     padding: 30px;
     box-sizing: border-box;
     border-radius: 15px;
     font-size: 1.1rem;
     line-height: 25pt;
     width: 100%;
+    margin-top: 0;
 }
 
 #container-7-box, #container-8-box {
