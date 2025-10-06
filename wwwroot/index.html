@@ -3,9 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <title>MLB Analytics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <main id="app"></main>
+  <div class="loader-parent">
+    <div class="loader">
+      <div class="outfield"></div>
+      <div class="infield">
+        <div class="base"></div>
+        <div class="base"></div>
+        <div class="base"></div>
+        <div class="base"></div>
+        <div class="runner"></div>
+      </div>
+      <div class="ball"></div>
+      <div class="loads">Loading</div>
+    </div>
+  </div>
+  <main id="app">
+    <h1 id="main-title"><span class="special-colors">MLB</span> Analytics <span class="petty">(so that I could be petty)</span></h1>
+    <p class="intro">So I got into an argument with a Yankees fan (as one does). He said, “Yankees are still higher than Toronto in the power rankings,” and... it didn't sit right with me. Sure, at the moment he said it, he was right, but I KNEW for a fact that Toronto had been higher most season. That stuck in my head way too long, so I decided to find out for real. When did Toronto actually pass the Yankees? Are power rankings even that reliable? And while I was at it, could I figure out how to measure a team's real performance - maybe even predict what's coming next?</p>
+  </main>
 
   <script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
   <script type="module" src="./app.js"></script>

@@ -1,0 +1,448 @@
+:root {
+    --logo-size: 60px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    overflow-x: hidden;
+    margin: 20px;
+}
+
+#main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.special-colors {
+    background: linear-gradient(147deg,rgba(4, 30, 66, 1) 0%, rgba(191, 13, 62, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+.petty {
+    font-size: 1rem;
+    font-style: italic;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.intro {
+    margin: 0 auto 40px auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #b5b5b5;
+}
+.content-box {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.team-checkbox-container-main, .team-radio-container-main {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgb(0,73,145);
+    width: 100%;
+}
+.team-checkbox-container, .team-radio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
+.team-checkbox-container label, .team-radio-container label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    background-color: white;
+    transition: background-color 0.3s, border-color 0.3s;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    border-style: double;
+    position: relative;
+}
+
+.team-checkbox-container label:hover, .team-radio-container label:hover {
+    background-color: #f0f0f0;
+}
+
+.team-checkbox-container input[type="checkbox"], .team-radio-container input[type="radio"] {
+    display: none;
+}
+
+.team-checkbox-container input[type="checkbox"]:checked + label, .team-radio-container input[type="radio"]:checked + label {
+    border: 3px solid #4CAF50;
+    background-color: #e0f0ff;
+}
+
+/* a after used to show a checkmark or dot */
+.team-checkbox-container input[type="checkbox"]:checked + label::after {
+    content: '✓';
+    position: absolute;
+    bottom: calc((var(--logo-size) * 0.7071));
+    left: calc((var(--logo-size) * 0.7071));
+    background-color: white;
+    color: #4CAF50;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border: 2px solid #4CAF50;
+    font-weight: bold;
+}
+
+
+.team-radio-container input[type="radio"]:checked + label::after {
+    content: '✓';
+    position: absolute;
+    bottom: calc((var(--logo-size) * 0.7071));
+    left: calc((var(--logo-size) * 0.7071));
+    background-color: white;
+    color: #4CAF50;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border: 2px solid #4CAF50;
+    font-weight: bold;
+}
+
+.mode-container {
+    background: black;
+    color: white;
+    border-radius: 50px;
+    width: fit-content;
+    overflow: hidden;
+    text-transform: uppercase;
+    position: relative;
+    width: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+
+.mode-container label {
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mode-container input[type="radio"] {
+    display: none;
+}
+
+/* Make checked label text black */
+.mode-container input[type="radio"]:checked + label {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+.chart {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+#chart-div-5, #chart-div-8 {
+    width: 70%;
+}
+
+.content-box-text2 {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    padding: 20px;
+}
+
+
+.content-box-text1 {
+    background: #ededed;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    line-height: 25pt;
+    width: 100%;
+}
+
+#container-7-box, #container-8-box {
+    margin-top: 60px;
+}
+
+
+
+:root {
+  --grass: #0b498f;
+  --infield: #17295c;
+  --out: #fff;
+  --base: #fff;
+  --team: #e92415;
+  --time: 6s;
+}
+
+.loader-parent {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: #093d77;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.loader {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.outfield {
+  position: relative;
+  background-color: var(--grass);
+  height: 200px;
+  width: 200px;
+  transform: rotate(45deg);
+  border-radius: 120px 0 10px;
+  border-width: 3px 0 0 3px;
+  border-color: var(--out);
+  border-style: double;
+}
+.outfield::before, .outfield::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+}
+.outfield::before {
+  height: 25px;
+  width: 25px;
+  background: var(--infield);
+  box-shadow: -6px -60px 0 -3px var(--infield), -60px -60px 0 var(--infield), -60px -6px 0 -3px var(--infield);
+}
+.outfield::after {
+  height: 20px;
+  width: 20px;
+  bottom: 40px;
+  left: 139px;
+  background: var(--infield);
+}
+
+.infield {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0px;
+  transform: rotate(45deg);
+  border-radius: 50px 0 10px 0;
+  border-color: var(--infield);
+  border-width: 40px 15px 15px 40px;
+  border-style: solid;
+}
+.infield::before, .infield::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  background: white;
+  transform-origin: bottom;
+  z-index: 3;
+}
+.infield::before {
+  bottom: -10px;
+  right: -11px;
+  height: 181px;
+}
+.infield::after {
+  transform: rotate(90deg);
+  bottom: -10px;
+  left: -121px;
+  height: 180px;
+}
+
+.base {
+  height: 9px;
+  width: 9px;
+  background-color: var(--base);
+  border-radius: 1px;
+  position: absolute;
+}
+.base:nth-child(1) {
+  right: -10px;
+  top: -10px;
+}
+.base:nth-child(2) {
+  left: -10px;
+  top: -9px;
+}
+.base:nth-child(3) {
+  left: -10px;
+  bottom: -10px;
+}
+.base:nth-child(4) {
+  right: -11px;
+  bottom: -11px;
+}
+
+.ball {
+  position: absolute;
+  transform: translate(-0.5%, 71.5%) scale(0.1);
+  height: 100px;
+  width: 100px;
+  background: white;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: playBall var(--time) linear infinite;
+  transition: opacity 0.5s linear;
+}
+.ball::before, .ball::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 2px solid red;
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+}
+.ball::before {
+  top: 0;
+  left: 70%;
+}
+.ball::after {
+  top: 0;
+  left: -70%;
+}
+
+.runner {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  background: var(--team);
+  border-radius: 50%;
+  animation: runTheBases var(--time) ease-out infinite;
+}
+
+@keyframes playBall {
+  0% {
+    transform: translate(-0.5%, 71.5%) scale(0.05) rotate(0);
+  }
+  10% {
+    transform: translate(-0.5%, 110%) scale(0.05) rotate(360deg);
+  }
+  50% {
+    transform: translate(-122%, -80%) scale(1) rotate(720deg);
+  }
+  100% {
+    transform: translate(-122%, -110%) scale(0) rotate(1080deg);
+  }
+}
+@keyframes runTheBases {
+  10% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0px, -60px);
+  }
+  50% {
+    transform: translate(-60px, -60px);
+  }
+  75% {
+    transform: translate(-60px, 0px);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+}
+
+
+.loads {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font: 600 14px/1.2 system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--out);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.loads::after {
+  content: "";
+  animation: dots 4s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: "";
+  }
+  16.67% {
+    content: ".";
+  }
+  33.34% {
+    content: "..";
+  }
+  50.1% {
+    content: "...";
+  }
+  66.68% {
+    content: "..";
+  }
+  83.35% {
+    content: ".";
+  }
+  100% {
+    content: "";
+  }
+}

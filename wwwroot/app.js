@@ -20,19 +20,61 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // create the content boxes
         // for now create chart-div-6 manually
-        
-        await createContentBox(TEAMS, TMS, "Team Rankings", app, "container-1", "team-checkboxes-1", "mode-1", "chart-div-1", "checkbox", ["mlb", "power", "diff", "both"], [getRankings]);
-        await createContentBox(TEAMS, TMS, "Rank Changes", app, "container-2", "team-checkboxes-2", "mode-2", "chart-div-2", "checkbox", ["mlb", "power"], [getKDEs]);
-        await createContentBox(TEAMS, TMS, "Volatility", app, "container-3", "team-checkboxes-3", "mode-3", "chart-div-3", "checkbox", ["mlb", "power"], [getVolatility]);
-        await createContentBox(TEAMS, TMS, "Stability", app, "container-4", "team-radios-4", "mode-4", "chart-div-4", "radio", ["mlb", "power"], [getStability]);
-        await createContentBox(TEAMS, TMS, "Causality", app, "container-5", "team-radios-5", "mode-5", "chart-div-5", "radio", [], [getGranger,null, statsFill]);
-        await createContentBox(TEAMS, TMS, "Similarity", app, "container-7", "team-checkboxes-7", "mode-7", "chart-div-7", "checkbox", ["mlb", "power"], [getSimilarity, null, getSimilarityData]);
-                const chartDiv6 = document.createElement("div");
-                chartDiv6.id = "chart-div-6";
-                chartDiv6.classList.add("chart");
-                app.appendChild(chartDiv6);
-                getClusters("chart-div-6");
-        await createContentBox(TEAMS, TMS, "Performance Tier", app, "container-8", "team-radios-8", "mode-8", "chart-div-8", "radio", [], [getHmm, null, getHmmData]);
+
+        await createContentBox(TEAMS, TMS, "Team Rankings", app, "container-1", "team-checkboxes-1", "mode-1", "chart-div-1", "checkbox", ["mlb", "power", "diff", "both"], [getRankings], 'TOR',"The easiest way to see how a team's performing is to track its ranking through the season. Pick any number of teams from the selector and compare their journeys over time. Choose <strong>MLB</strong> Rank for win-based standings, <strong>Power</strong> Rank for analyst insights, <strong>Both</strong> to see them side-by-side, or <strong>Diff</strong> to reveal where perception and performance split - positive means overrated, negative means underrated.");
+        styleTeamSelectors();
+        await createContentBox(TEAMS, TMS, "Rank Changes", app, "container-2", "team-checkboxes-2", "mode-2", "chart-div-2", "checkbox", ["mlb", "power"], [getKDEs],'TOR', "This chart shows how a team's ranking shifts week to week. The bars show actual changes, while the curve shows the probability of those changes. If the peak is above zero, the team usually climbs, below, they tend to drop. The spread reveals how consistent they are - a narrow curve means steady performance, a wide one means volatility. Choose <strong>MLB</strong> Rank for win-based standings or <strong>Power</strong> Rank for analyst insights. Pick any number of teams from the selector to compare their rank movements and consistency.");
+        styleTeamSelectors();
+        await createContentBox(TEAMS, TMS, "Volatility", app, "container-3", "team-checkboxes-3", "mode-3", "chart-div-3", "checkbox", ["mlb", "power"], [getVolatility], 'TOR', "This line shows how a team's ranking volatility changes through the season. Every team starts at zero - no games mean no volatility. Rising slopes signal growing unpredictability, while falling slopes show steadier performance. Spikes mean the team's performance swings wildly from week to week; dips show steady, predictable play. It's the easiest way to see who’s stable and who's chaotic. Pick any number of teams from the selector to compare their volatility trends.");
+        styleTeamSelectors();
+        await createContentBox(TEAMS, TMS, "Stability", app, "container-4", "team-radios-4", "mode-4", "chart-div-4", "radio", ["mlb", "power"], [getStability], 'TOR', "These curves show how much a team's past performance influences its future results. Each lookback represents how many weeks of performance we're looking at. Positive  means momentum - good weeks tend to follow good ones. Negative values mean reversals - ups are followed by downs. When the curve drops, consistency is fading, when it rises, trends are strengthening. I know this is getting a bit mathy, but it's a powerful way to see who's riding hot streaks and who's stuck in slumps. Pick any team from the selector to see how their performance stability shifts with different lookback periods.");
+        styleTeamSelectors();
+        // after these 4 are loaded remove the loader
+        const loaderParent = document.querySelector(".loader-parent");
+        if (loaderParent) {
+          // slide it to the left and fade out
+            loaderParent.style.transition = "all 0.5s ease";
+            loaderParent.style.transform = "translateX(-100%)";
+            loaderParent.style.opacity = "0";
+            // set body overflow to auto
+            document.body.style.overflow = "auto";
+            // set overflow-x to hidden
+            document.body.style.overflowX = "hidden";
+        }
+        await createContentBox(TEAMS, TMS, "Causality", app, "container-5", "team-radios-5", "mode-5", "chart-div-5", "radio", [], [getGranger,null, statsFill], 'TOR', "This chart tests whether power rankings can predict actual MLB rankings - basically, how reliable they even are. Each bar shows a lag, meaning how many weeks back the power ranking is compared to the MLB rank. If a bar falls below the red line, it means the power rankings have predictive power when looking back that many weeks. The lower the bar, the stronger the prediction. If all bars are above the line, it means power rankings don't really help predict actual performance of that team. Pick any team from the selector to see how well their power rankings forecast their real-world results.");
+        styleTeamSelectors();
+        await createContentBox(TEAMS, TMS, "Similarity", app, "container-7", "team-checkboxes-7", "mode-7", "chart-div-7", "checkbox", ["mlb", "power"], [getSimilarity, null, getSimilarityData],'TOR',"Here you can see the similarity between any two teams. The Average Rank Difference shows how far apart they usually sit in the standings. Similarity in Week-by-Week Changes captures how often they move in the same direction - a higher value means they rise and fall together, while a negative one means opposite momentum. Overall Trend Similarity reflects whether their trends align over time. Finally, the Overall Trajectory Similarity score summarizes how closely their season paths match overall - higher means more alike. Select any two teams from the selector to see how closely their seasons mirror each other.");
+        styleTeamSelectors();
+
+
+        // manually create chart-div-6 content box
+        const box6 = document.createElement("div");
+        box6.id = `container-6-box`;
+        box6.classList.add("content-box");
+        app.appendChild(box6);
+        const header6 = document.createElement("h2");
+        header6.textContent = "Clustering";
+        box6.appendChild(header6);
+        const p6 = document.createElement("p");
+        p6.id = `container-6-content1`;
+        p6.classList.add("content-box-text1");
+        p6.innerHTML = `This chart groups teams based on their batting, pitching, and fielding performance throughout the season. Using these stats, teams with similar technical profiles are placed in the same cluster - essentially, they play the game in a similar way. On the chart, the x-axis shows each cluster's average MLB rank, while the y-axis shows the actual rank of each individual team.
+        <br><br>
+        You'll notice a clear pattern: the top clusters are packed with playoff teams - technically sharp, consistent across all areas. The bottom clusters contain teams that struggled across the board, finishing near the bottom of their divisions. The middle clusters are more crowded: these teams have comparable stats, but their final rankings vary widely, suggesting that other factors like injuries, luck, clutch hitting, or managerial choices likely influenced outcomes.
+        <br><br>
+        In short, the higher a team appears on the chart, the better it performed overall, and this clustering shows how technical quality translates into results, though not always perfectly. Baseball's still a game of numbers, but also of moments.`;
+        box6.appendChild(p6);
+        const chartDiv6 = document.createElement("div");
+        chartDiv6.id = "chart-div-6";
+        chartDiv6.classList.add("chart");
+        box6.appendChild(chartDiv6);
+        getClusters("chart-div-6");
+
+        await createContentBox(TEAMS, TMS, "Performance Tier", app, "container-8", "team-radios-8", "mode-8", "chart-div-8", "radio", [], [getHmm, null, getHmmData],'TOR',"Select any team. Here, each week's performance for that team is measured against all other teams across both leagues to see how it stacks up. Every week is classified as Good, Mediocre, or Bad, based on how strong that performance was in context. Over the season, these weekly states reveal each team's rhythm - who stays hot, who cools off, and who swings between extremes. From these patterns, we can estimate the chances of performing well next week, capturing each team's momentum in motion and predict how well they might do going forward.");
+
+        styleTeamSelectors();
+        // add event listener to checkboxes and radio buttons to restyle on change
+        document.body.addEventListener("change", styleTeamSelectors);
     } catch (error) {
         console.error("Error fetching data:", error);
     }
@@ -49,6 +91,7 @@ async function createContentBox(teams, tms, title, parent, containerId, inputBox
     // add two top level p elements for content1 and content2, one before chartDiv and one after
     const p1 = document.createElement("p");
     p1.id = `${containerId}-content1`;
+    p1.classList.add("content-box-text1");
     if (content1 && content1.length > 0) {
         p1.innerHTML = content1;
     }
@@ -57,6 +100,7 @@ async function createContentBox(teams, tms, title, parent, containerId, inputBox
     // add the second top level p element for content2
     const p2 = document.createElement("p");
     p2.id = `${containerId}-content2`;
+    p2.classList.add("content-box-text2");
     if (content2 && content2.length > 0) {
         p2.innerHTML = content2;
     }
@@ -74,14 +118,17 @@ async function createContentBox(teams, tms, title, parent, containerId, inputBox
         let anychecked = false;
         const modeContainer = document.createElement("div");
         modeContainer.id = `${modeName}-container`;
+        modeContainer.classList.add("mode-container");
         modeOptions.forEach(mode => {
             const radio = document.createElement("input");
             radio.type = "radio";
             radio.name = modeName;
             radio.id = `${modeName}-${mode}`;
             radio.value = mode;
+            radio.classList.add("mode-radio");
             const label = document.createElement("label");
             label.textContent = mode;
+            label.htmlFor = `${modeName}-${mode}`;
             modeContainer.appendChild(radio);
             modeContainer.appendChild(label);
             if (mode === "both") {
@@ -125,8 +172,7 @@ async function createContentBox(teams, tms, title, parent, containerId, inputBox
     // add a div for the plotly chart
     const chartDiv = document.createElement("div");
     chartDiv.id = chartDivId;
-    chartDiv.style.width = "100%";
-    chartDiv.style.height = "600px";
+    chartDiv.classList.add("chart");
     box.appendChild(chartDiv);
     // initial call to the callbacks in the array to render the chart for the default team
     if (callbackArray && callbackArray.length > 0 && callbackArray[0] != null) {
@@ -158,6 +204,7 @@ async function createContentBox(teams, tms, title, parent, containerId, inputBox
 async function createTeamCheckboxes(teams,tms,parent, containerId, modeName, chartDivId, eventupdate = [getRankings], p1, p2) {
     const container = document.createElement("div");
     container.id = containerId;
+    container.classList.add("team-checkbox-container-main");
     for (const [teamId, teamName] of Object.entries(teams)) {
         const teamAbbr = tms[teamId];
         const color = await fetch(`/color?team=${teamAbbr}`).then((res) => res.json());
@@ -206,6 +253,7 @@ async function createTeamCheckboxes(teams,tms,parent, containerId, modeName, cha
 async function createTeamRadioButtons(teams,tms,parent, containerId, modeName, chartDivId, eventupdate = [getRankings], p1, p2) {
     const container = document.createElement("div");
     container.id = containerId;
+    container.classList.add("team-radio-container-main");
     for (const [teamId, teamName] of Object.entries(teams)) {
         const teamAbbr = tms[teamId];
         const color = await fetch(`/color?team=${teamAbbr}`).then((res) => res.json());
@@ -272,7 +320,12 @@ async function getRankings(code, checkboxContainerId, modeName, chart_div, noMar
     if (selectedTeams.length > 0) {
         const query = selectedTeams.map(team => `teams=${team}`).join("&") + `&mode=${mode}`;
         const data = await fetch(`/ranks?${query}`).then(res => res.json());
-        renderChart(data, selectedTeams, mode, chart_div, noMarkers, drawLine, drawShading);
+        if (mode === "diff") {
+            renderChart(data, selectedTeams, mode, chart_div, noMarkers, drawLine, false);
+        }
+        else {
+            renderChart(data, selectedTeams, mode, chart_div, noMarkers, drawLine, drawShading);
+        }
     }
 }
 
@@ -360,6 +413,10 @@ function renderChart(data, selectedTeams, mode, chartDivId, noMarkers = false, d
             y: -0.2,
         },
         hovermode: 'closest',
+        margin: { l: 30, r: 30, t: 30, b: 30 },  // tighten margins (left, right, top, bottom)
+        autosize: true,
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
     };
 
     //remove the x axis (do not make a dark line)
@@ -479,7 +536,7 @@ function renderChart(data, selectedTeams, mode, chartDivId, noMarkers = false, d
         });
     }
 
-    const config = { responsive: true };
+    const config = { responsive: true, displayModeBar: false };
     const el = document.getElementById(chartDivId);
     Plotly.newPlot(el, traces, layout, config);
 
@@ -652,7 +709,11 @@ function renderKDE(data, chartDivId, noMarkers = true, drawLine = false, drawSha
     xaxis: { title: "Value" },
     yaxis: { title: "Density", autorange: true, range: [0, null] },
     legend: { orientation: 'h', yanchor: 'bottom', y: 1.02, xanchor: 'right', x: 1 },
-    shapes: []                                     // CHANGED: start fresh; we won't overwrite later
+    shapes: [],                                // CHANGED: start fresh; we won't overwrite later
+    margin: { l: 50, r: 30, t: 50, b: 30 },  // tighten margins (left, right, top, bottom)
+    autosize: true,
+    paper_bgcolor: 'rgba(0,0,0,0)',
+    plot_bgcolor: 'rgba(0,0,0,0)',
   };
 
   // CHANGED: always plot per-team peak (and do NOT overwrite later)
@@ -701,7 +762,7 @@ function renderKDE(data, chartDivId, noMarkers = true, drawLine = false, drawSha
   }
 
   const el = document.getElementById(chartDivId);
-  Plotly.newPlot(el, traces, layout, { responsive: true });
+  Plotly.newPlot(el, traces, layout, { responsive: true, displayModeBar: false });
 }
 
 // 3. Volatility functions
@@ -763,7 +824,11 @@ function renderVolatility(data, chartDivId, noMarkers = false, drawLine = true, 
         title: 'Volatility',
         xaxis: { title: 'Date' },
         yaxis: { title: 'Volatility (σ)', autorange: true },
-        showlegend: true
+        showlegend: true,
+        margin: { l: 50, r: 30, t: 30, b: 30 },  // tighten margins (left, right, top, bottom)
+        autosize: true,
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
     };
     const traces = [];
     const teams = data[Object.keys(data)[0]].teams;
@@ -788,7 +853,7 @@ function renderVolatility(data, chartDivId, noMarkers = false, drawLine = true, 
 
 
     const el = document.getElementById(chartDivId);
-    Plotly.newPlot(el, traces, layout);
+    Plotly.newPlot(el, traces, layout, { responsive: true, displayModeBar: false });
 }
 
 // 4. Stability functions
@@ -846,7 +911,11 @@ function renderStability(data, chartDivId, noMarkers = false, drawLine = true, d
         title: 'Stability',
         xaxis: { title: 'Date' },
         yaxis: { title: 'Stability', autorange: true },
-        showlegend: true
+        showlegend: true,
+        margin: { l: 50, r: 30, t: 30, b: 50 },  // tighten margins (left, right, top, bottom)
+        autosize: true,
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
     };
     const traces = [];
     const teams = data[Object.keys(data)[0]].teams;
@@ -875,7 +944,7 @@ function renderStability(data, chartDivId, noMarkers = false, drawLine = true, d
     // give a title to the legend
     layout.legend.title = { text: 'Lookback' };
     const el = document.getElementById(chartDivId);
-    Plotly.newPlot(el, traces, layout);
+    Plotly.newPlot(el, traces, layout, { responsive: true, displayModeBar: false });
 
 }
 
@@ -894,6 +963,8 @@ async function getGranger(code, radioContainerId, modeName, chart_div, typeClass
         selectedTeams.push("TOR");
     }
     const mode = document.querySelector(`input[name="${modeName}"]:checked`) ? document.querySelector(`input[name="${modeName}"]:checked`).value : "power_to_mlb";
+    // set height of chart_div to 300px
+    document.getElementById(chart_div).style.height = "300px";
     // Only one team allowed, and because radio buttons, it will be the only selected one
     const team = selectedTeams[0];
     if (team) {
@@ -915,32 +986,36 @@ function renderGranger(data, chartDivId) {
     const traces = [{
         type: "bar",
         orientation: "h",
-        x: lagData.map(row => row.p_value),   // values on x-axis (horizontal bars)
-        y: lagData.map(row => row.lag),       // lags on y-axis
+        x: lagData.map(row => row.p_value),
+        y: lagData.map(row => row.lag),
         name: teamFullName,
         hovertemplate: `Team: ${teamFullName}<br>Lag: %{y}<br>p-value: %{x}<extra></extra>`,
-        width: 0.5,
-        marker: { color: color, opacity: 0.7 },
+        marker: { color: color, opacity: 0.8 },
+        width: 0.4, // thinner bars (default is 0.8)
     }];
 
     const layout = {
         title: `Granger Causality Test p-values for ${teamFullName} (Power → MLB)`,
         xaxis: { title: "p-value", range: [0, 1] },
         yaxis: { title: "Lag (weeks)", dtick: 1 },
-        bargap: 0.1,    // spacing between bars
+        bargap: 0.01,   // smaller gap between bars
+        bargroupgap: 0.02, // minimal internal gap (when multiple bars per lag)
         shapes: [
             {
                 type: "line",
                 x0: 0.05, x1: 0.05,
-                y0: 0.5, y1: lagData.length+0.5,
+                y0: 0.5, y1: lagData.length + 0.5,
                 line: { color: "red", width: 2, dash: "dashdot" }
             }
         ],
-        barcornerradius: 50, // rounded corners
-        width: 0.5,
+        barcornerradius: 35, // subtle rounding
+        margin: { l: 40, r: 30, t: 50, b: 40 },
+        autosize: true,
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)',
     };
 
-    Plotly.newPlot(chartDivId, traces, layout);
+    Plotly.newPlot(chartDivId, traces, layout, { responsive: true, displayModeBar: false });
 }
 
 async function statsFill(containerId) {
@@ -953,9 +1028,9 @@ async function statsFill(containerId) {
 
   return `
     <p class="granger-team"><strong>Team:</strong> ${getTeamFullNameFromCode(stats.team_code, TEAMS, TMS)}</p>
-    <p class="granger-best-lag"><strong>Best Lag:</strong> ${stats.best_lag} week(s)</p>
-    <p class="granger-best-p-value"><strong>Best p-value:</strong> ${(+stats.best_p).toFixed(4)}</p>
-    <p class="granger-significant"><strong>Significant at α=0.05:</strong> ${stats.is_significant ? "Yes" : "No"}</p>
+    <p class="granger-best-lag"><strong>Most predictive amount of weeks:</strong> ${stats.best_lag} week${stats.best_lag === 1 ? "" : "s"}</p>
+    <p class="granger-best-p-value"><strong>Best confidence score:</strong> ${100-100 * (+stats.best_p).toFixed(2)}%</p>
+    <p class="granger-significant"><strong>Do power rankings matter for this team:</strong> ${stats.is_significant ? "Yes" : "No"}</p>
   `;
 }
 
@@ -1020,7 +1095,7 @@ async function getClusters(chart_div) {
       zeroline: false
     },
     images: [] // start empty; we’ll add all logos next
-  });
+  }, { responsive: true, displayModeBar: false });
 
   const contourTraces = buildClusterContours(teams);
 
@@ -1073,7 +1148,8 @@ async function getClusters(chart_div) {
     // remove legend
     await Plotly.relayout(figDiv, {
         'showlegend': false
-    }); 
+    });
+
 
 }
 async function getLastRankForTeam(teamFullName) {
@@ -1358,163 +1434,17 @@ async function getSimilarityData(containerId){
     const string = `
         <p class="similarity-team-a"><strong>Team A:</strong> ${stats.team_a} (${teamA})</p>
         <p class="similarity-team-b"><strong>Team B:</strong> ${stats.team_b} (${teamB})</p>
-        <p class="similarity-source"><strong>Source:</strong> ${stats.source}</p>
-        <p class="similarity-avg-abs-rank-gap"><strong>Average Absolute Rank Gap:</strong> ${stats.avg_abs_rank_gap.toFixed(2)}</p>
-        <p class="similarity-corr-delta"><strong>Correlation of Weekly Changes (Δ):</strong> ${stats.corr_delta.toFixed(4)}</p>
-        <p class="similarity-corr-levels"><strong>Correlation of Levels:</strong> ${stats.corr_levels.toFixed(4)}</p>
-        <p class="similarity-dtw-raw"><strong>DTW Distance (raw):</strong> ${stats.dtw_raw.toFixed(2)}</p>
-        <p class="similarity-dtw-similarity-raw"><strong>DTW Similarity (raw, 0-100):</strong> ${stats.dtw_similarity_raw_0_100.toFixed(2)}</p>
-        <p class="similarity-dtw-similarity-z"><strong>DTW Similarity (z, 0-100):</strong> ${stats.dtw_similarity_z.toFixed(2)}</p>
-        <p class="similarity-dtw-z"><strong>DTW Distance (z):</strong> ${stats.dtw_z.toFixed(2)}</p>
-        <p class="similarity-overlap"><strong>Number of Overlapping Weeks:</strong> ${stats.overlap}</p>
+        <p class="similarity-source"><strong>Ranking Type:</strong> ${stats.source.toUpperCase()}</p>
+        <p class="similarity-avg-abs-rank-gap"><strong>Average Rank Difference:</strong> ${stats.avg_abs_rank_gap.toFixed(2)}</p>
+        <p class="similarity-corr-delta"><strong>Similarity in Week by Week Changes:</strong> ${stats.corr_delta.toFixed(2)*100}%</p>
+        <p class="similarity-corr-levels"><strong>Overall Trend Similarity:</strong> ${stats.corr_levels.toFixed(2)*100}%</p>
+        <p class="similarity-dtw-similarity-z"><strong>Overall Trajectory Similarity:</strong> ${stats.dtw_similarity_z.toFixed(2)}%</p>
     `;
     console.log(string)
     return string;
 }
 
 // 8. HMM functions
-
-/*
-/hmm?team=TOR
-
-Example response:
-{
-  "states": [
-    {
-      "date": "Sun, 13 Apr 2025 00:00:00 GMT",
-      "label": "Bad",
-      "state": 2
-    },
-    {
-      "date": "Sun, 20 Apr 2025 00:00:00 GMT",
-      "label": "Good",
-      "state": 0
-    },
-    {
-      "date": "Sun, 27 Apr 2025 00:00:00 GMT",
-      "label": "Mediocre",
-      "state": 1
-    },
-    {
-      "date": "Sun, 04 May 2025 00:00:00 GMT",
-      "label": "Bad",
-      "state": 2
-    },
-    {
-      "date": "Sun, 11 May 2025 00:00:00 GMT",
-      "label": "Mediocre",
-      "state": 1
-    },
-    {
-      "date": "Sun, 18 May 2025 00:00:00 GMT",
-      "label": "Bad",
-      "state": 2
-    },
-    {
-      "date": "Sun, 25 May 2025 00:00:00 GMT",
-      "label": "Good",
-      "state": 0
-    },
-    {
-      "date": "Sun, 08 Jun 2025 00:00:00 GMT",
-      "label": "Good",
-      "state": 0
-    },
-    {
-      "date": "Sun, 15 Jun 2025 00:00:00 GMT",
-      "label": "Good",
-      "state": 0
-    },
-    {
-      "date": "Sun, 22 Jun 2025 00:00:00 GMT",
-      "label": "Mediocre",
-      "state": 1
-    },
-    {
-      "date": "Sun, 29 Jun 2025 00:00:00 GMT",
-      "label": "Bad",
-      "state": 2
-    },
-    {
-      "date": "Sun, 06 Jul 2025 00:00:00 GMT",
-      "label": "Good",
-      "state": 0
-    },
-    {
-      "date": "Sun, 27 Jul 2025 00:00:00 GMT",
-      "label": "Good",
-      "state": 0
-    },
-    {
-      "date": "Sun, 03 Aug 2025 00:00:00 GMT",
-      "label": "Mediocre",
-      "state": 1
-    },
-    {
-      "date": "Sun, 10 Aug 2025 00:00:00 GMT",
-      "label": "Bad",
-      "state": 2
-    },
-    {
-      "date": "Sun, 17 Aug 2025 00:00:00 GMT",
-      "label": "Good",
-      "state": 0
-    },
-    {
-      "date": "Sun, 24 Aug 2025 00:00:00 GMT",
-      "label": "Mediocre",
-      "state": 1
-    },
-    {
-      "date": "Sun, 07 Sep 2025 00:00:00 GMT",
-      "label": "Bad",
-      "state": 2
-    },
-    {
-      "date": "Sun, 14 Sep 2025 00:00:00 GMT",
-      "label": "Good",
-      "state": 0
-    },
-    {
-      "date": "Sun, 21 Sep 2025 00:00:00 GMT",
-      "label": "Mediocre",
-      "state": 1
-    },
-    {
-      "date": "Sun, 28 Sep 2025 00:00:00 GMT",
-      "label": "Bad",
-      "state": 2
-    }
-  ],
-  "stats": {
-    "P": [
-      [0.378343019938779, 0.621656960728279, 1.93329416911205e-8],
-      [2.29623938834052e-12, 4.02418255781081e-9, 0.999999995973521],
-      [0.828786300274434, 0.171213637978203, 6.17473630760042e-8]
-    ],
-    "P_labels": [
-      "Good",
-      "Mediocre",
-      "Bad"
-    ],
-    "init": "quant",
-    "mean_cols": [
-      "level_dev",
-      "chg_z",
-      "mom3_z"
-    ],
-    "means": [
-      [0.231410838611133, 1.30732635182497, 0.939337996409358],
-      [0.0191259839715796, -0.771932540614456, -0.00395380123557696],
-      [-0.263665417384401, -0.487563266023776, -0.389979127656206]
-    ],
-    "n_used": 21,
-    "pi": [
-      [1.69883751332936e-18, 2.67428788252954e-35, 1]
-    ]
-  }
-}
-*/
 
 async function getHmm(code, checkboxContainerId, modeName, chart_div, noMarkers = false, drawLine = false, drawShading = false, typeClass="team-radio"){
     await getRankings(code, checkboxContainerId, modeName, chart_div, noMarkers = false, drawLine = false, drawShading = false, typeClass="team-radio");
@@ -1611,7 +1541,7 @@ async function getHmmData(containerId){
     console.log(stateArray);
     // get final state
     const finalState = hmmData.states[hmmData.states.length - 1];
-    const string = `<p class="hmm-team"><strong>Team:</strong> ${selectedTeams[0]}</p>
+    const string = `<p class="hmm-team"><strong>Team:</strong> ${getTeamFullNameFromCode(selectedTeams[0],TEAMS,TMS)}</p>
     <p class="hmm-prob-good"><strong>Probability of the team performing well next week:</strong> ${getProbfromTransitionMatrix(hmmData.stats.P, finalState.state, 0)}%</p>
     <p class="hmm-prob-mediocre"><strong>Probability of the team performing mediocre next week:</strong> ${getProbfromTransitionMatrix(hmmData.stats.P, finalState.state, 1)}%</p>
     <p class="hmm-prob-bad"><strong>Probability of the team performing poorly next week:</strong> ${getProbfromTransitionMatrix(hmmData.stats.P, finalState.state, 2)}%</p>
@@ -1638,4 +1568,69 @@ function getProbfromTransitionMatrixFromBeginning(P, toState, stateArray) {
     // finally multiply by the probability of going from last state to toState
     prob *= P[stateArray[stateArray.length - 1]][toState];
     return prob;
+}
+
+// Design functions
+
+// function that detects every radio and chechbox with team-checkbox or team-radio class
+// 1. remove the actual checkbox/radio input
+// 2. Remove the label text
+// 3. Add the team logo as background image to the label
+function styleTeamSelectors() {
+    const checkboxes = document.querySelectorAll('input.team-checkbox, input.team-radio');
+    checkboxes.forEach(checkbox => {
+        const label = document.querySelector(`label[for="${checkbox.id}"]`);
+        if (label) {
+            // get team code from checkbox value
+            const teamCode = checkbox.value;
+            // get logo url from data-logo attribute
+            const logoUrl = checkbox.dataset.logo;
+            // remove checkbox/radio input
+            checkbox.style.display = 'none';
+            // remove label text
+            label.innerHTML = '';
+            // add team logo as background image to label
+            label.style.backgroundImage = `url(${logoUrl})`;
+        }
+    });
+    // color each .team-checkbox-container-main and .team-radio-container-main div based on the current selection's data-pcolor or data-scolor depending on data-association
+    // for team-checkbox-container-main, create an array of all checkboxes inside it that are checked, then get their data-pcolor or data-scolor and set the background color of the container to a gradient of those colors
+    // for team-radio-container-main, get the checked radio button inside it, then get its data-pcolor or data-scolor and set the background color of the container to that color
+    const checkboxContainers = document.querySelectorAll('.team-checkbox-container-main');
+    checkboxContainers.forEach(container => {
+        const checkedCheckboxes = container.querySelectorAll('input.team-checkbox:checked');
+        if (checkedCheckboxes.length > 0) {
+            const colors = Array.from(checkedCheckboxes).map(checkbox => {
+                const association = checkbox.dataset.association;
+                return (association === "primary" ? checkbox.dataset.pcolor : checkbox.dataset.scolor);
+            });
+            // create a gradient from those colors
+            const gradient = `linear-gradient(45deg, ${colors.join(', ')})`;
+            container.style.backgroundImage = gradient;
+            container.style.backgroundColor = 'white';
+        } else {
+            container.style.backgroundImage = 'none';
+        }
+    });
+    const radioContainers = document.querySelectorAll('.team-radio-container-main');
+    radioContainers.forEach(container => {
+        const checkedRadio = container.querySelector('input.team-radio:checked');
+        if (checkedRadio) {
+            const association = checkedRadio.dataset.association;
+            const color = (association === "primary" ? checkedRadio.dataset.pcolor : checkedRadio.dataset.scolor);
+            container.style.backgroundColor = color;
+        }
+        else {
+            container.style.backgroundColor = 'transparent';
+        }
+    });
+}
+        
+// transparent paper
+// after all charts are loaded, make their background transparent by adding to their layout: paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)'
+function makeChartsTransparent() {
+   const charts = document.querySelectorAll('.plotly-graph-div');
+    charts.forEach(chart => {
+        Plotly.relayout(chart, { paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)' });
+    });
 }
